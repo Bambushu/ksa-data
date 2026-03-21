@@ -1,0 +1,1 @@
+{"version":3,"file":"reporter.d.ts","sourceRoot":"","sources":["../../../lib/bonusguard/reporter.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,YAAY,CAAC;AAIrD,wBAAgB,YAAY,CAAC,MAAM,EAAE,kBAAkB,GAAG,MAAM,CAsC/D;AAED,wBAAgB,UAAU,CAAC,MAAM,EAAE,kBAAkB,GAAG,IAAI,CAI3D;AAED,wBAAgB,gBAAgB,CAAC,YAAY,EAAE,MAAM,EAAE,EAAE,KAAK,EAAE,MAAM,GAAG,MAAM,CAoB9E"}
