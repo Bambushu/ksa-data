@@ -87,9 +87,9 @@ export const casinos: Casino[] = [
     welcome_bonus: {
     type: "free_spins",
     match_percentage: 0,
-    max_bonus_eur: 0,
-    free_spins: 100,
-    free_spins_value_eur: 0.5,
+    max_bonus_eur: 50,
+    free_spins: 125,
+    free_spins_value_eur: 0.4,
     free_spins_rtp: 0.9608,
     wagering_requirement: 1,
     wagering_applies_to: "bonus",
@@ -1125,7 +1125,7 @@ export const casinos: Casino[] = [
     min_deposit_eur: 20,
     qualifying_wager_eur: 20,
     max_cashout_eur: null,
-    time_limit_days: 30,
+    time_limit_days: 7,
     game_weightings: {
     slots: 1,
     live_casino: 0,

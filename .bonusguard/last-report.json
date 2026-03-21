@@ -1,0 +1,317 @@
+{
+  "date": "2026-03-21",
+  "results": [
+    {
+      "casino_id": "holland-casino-online",
+      "casino_name": "Holland Casino Online",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "unibet",
+      "casino_name": "Unibet",
+      "status": "mismatch",
+      "mismatches": [
+        {
+          "casino_id": "unibet",
+          "casino_name": "Unibet",
+          "terms_url": "https://www.unibet.nl/promotions/welcome-to-casino",
+          "field": "max_bonus_eur",
+          "our_value": 0,
+          "site_value": 50,
+          "priority": "high",
+          "confidence": 0.95
+        },
+        {
+          "casino_id": "unibet",
+          "casino_name": "Unibet",
+          "terms_url": "https://www.unibet.nl/promotions/welcome-to-casino",
+          "field": "wagering_requirement",
+          "our_value": 1,
+          "site_value": 0,
+          "priority": "high",
+          "confidence": 0.9
+        },
+        {
+          "casino_id": "unibet",
+          "casino_name": "Unibet",
+          "terms_url": "https://www.unibet.nl/promotions/welcome-to-casino",
+          "field": "wagering_applies_to",
+          "our_value": "bonus",
+          "site_value": null,
+          "priority": "high",
+          "confidence": 0.85
+        },
+        {
+          "casino_id": "unibet",
+          "casino_name": "Unibet",
+          "terms_url": "https://www.unibet.nl/promotions/welcome-to-casino",
+          "field": "free_spins",
+          "our_value": 100,
+          "site_value": 125,
+          "priority": "medium",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "casino_id": "betcity",
+      "casino_name": "BetCity",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "betmgm",
+      "casino_name": "BetMGM",
+      "status": "mismatch",
+      "mismatches": [
+        {
+          "casino_id": "betmgm",
+          "casino_name": "BetMGM",
+          "terms_url": "https://www.betmgm.nl/promoties/voorwaarden",
+          "field": "match_percentage",
+          "our_value": 0,
+          "site_value": null,
+          "priority": "high",
+          "confidence": 0.9
+        },
+        {
+          "casino_id": "betmgm",
+          "casino_name": "BetMGM",
+          "terms_url": "https://www.betmgm.nl/promoties/voorwaarden",
+          "field": "max_bonus_eur",
+          "our_value": 0,
+          "site_value": null,
+          "priority": "high",
+          "confidence": 0.8
+        },
+        {
+          "casino_id": "betmgm",
+          "casino_name": "BetMGM",
+          "terms_url": "https://www.betmgm.nl/promoties/voorwaarden",
+          "field": "wagering_requirement",
+          "our_value": 0,
+          "site_value": null,
+          "priority": "high",
+          "confidence": 0.95
+        },
+        {
+          "casino_id": "betmgm",
+          "casino_name": "BetMGM",
+          "terms_url": "https://www.betmgm.nl/promoties/voorwaarden",
+          "field": "wagering_applies_to",
+          "our_value": "bonus",
+          "site_value": null,
+          "priority": "high",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "casino_id": "casino777",
+      "casino_name": "Casino777",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "vbet",
+      "casino_name": "Vbet",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "888",
+      "casino_name": "888",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "hard-rock-casino",
+      "casino_name": "Hard Rock Casino",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "comeon",
+      "casino_name": "ComeOn",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "fair-play-online",
+      "casino_name": "Fair Play Online",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "leovegas",
+      "casino_name": "LeoVegas",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "kansino",
+      "casino_name": "Kansino",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "betnation",
+      "casino_name": "Betnation",
+      "status": "mismatch",
+      "mismatches": [
+        {
+          "casino_id": "betnation",
+          "casino_name": "Betnation",
+          "terms_url": "https://www.betnation.nl/promoties",
+          "field": "bonus_type",
+          "our_value": "deposit_match",
+          "site_value": "combined",
+          "priority": "high",
+          "confidence": 0.8
+        },
+        {
+          "casino_id": "betnation",
+          "casino_name": "Betnation",
+          "terms_url": "https://www.betnation.nl/promoties",
+          "field": "free_spins",
+          "our_value": 0,
+          "site_value": 100,
+          "priority": "medium",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "casino_id": "toto",
+      "casino_name": "TOTO",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "jacks-nl",
+      "casino_name": "Jacks.nl",
+      "status": "mismatch",
+      "mismatches": [
+        {
+          "casino_id": "jacks-nl",
+          "casino_name": "Jacks.nl",
+          "terms_url": "https://www.jacks.nl/promoties",
+          "field": "bonus_type",
+          "our_value": "deposit_match",
+          "site_value": "combined",
+          "priority": "high",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "casino_id": "getlucky",
+      "casino_name": "GetLucky",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "bingoal",
+      "casino_name": "Bingoal",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "hommerson",
+      "casino_name": "Hommerson",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "lucky-7-casino",
+      "casino_name": "Lucky 7 Casino",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "bet365",
+      "casino_name": "bet365",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "no terms_url"
+    },
+    {
+      "casino_id": "tonybet",
+      "casino_name": "Tonybet",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "welcome_bonus_available is false"
+    },
+    {
+      "casino_id": "goldrun-casino",
+      "casino_name": "Goldrun Casino",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "no terms_url"
+    },
+    {
+      "casino_id": "starcasino",
+      "casino_name": "Starcasino",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "no terms_url"
+    },
+    {
+      "casino_id": "circus",
+      "casino_name": "Circus.nl",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "no terms_url"
+    },
+    {
+      "casino_id": "winnitt",
+      "casino_name": "Winnitt",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "welcome_bonus_available is false"
+    },
+    {
+      "casino_id": "ggpoker",
+      "casino_name": "GGPoker",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "welcome_bonus_available is false"
+    },
+    {
+      "casino_id": "one-casino",
+      "casino_name": "One Casino",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "no terms_url"
+    },
+    {
+      "casino_id": "711",
+      "casino_name": "711",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "no terms_url"
+    },
+    {
+      "casino_id": "winz",
+      "casino_name": "Winz",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "no terms_url"
+    },
+    {
+      "casino_id": "zebet",
+      "casino_name": "ZEbet",
+      "status": "skipped",
+      "mismatches": [],
+      "reason": "welcome_bonus_available is false"
+    }
+  ],
+  "summary": {
+    "checked": 19,
+    "confirmed": 15,
+    "mismatched": 4,
+    "skipped": 11,
+    "errors": 0
+  }
+}
