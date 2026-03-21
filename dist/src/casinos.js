@@ -4,7 +4,7 @@ export const casinos = [
         id: "holland-casino-online",
         name: "Holland Casino Online",
         slug: "holland-casino-online",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1610/01.247.085",
         live_casino_bonus: {
             type: "free_chips",
             summary: "€30 aan Golden Chips over 4 weken. €5 in week 1, €25 over weken 2-4. Winsten = cash.",
@@ -81,7 +81,7 @@ export const casinos = [
             notes: "Geen code nodig. Free bets na afhandeling kwalificerende bet. Alleen 24+. Ook €180 Refer-a-friend bonus via uitnodigingslink.",
             last_verified: "2026-03-20"
         },
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1730/01.267.175",
         welcome_bonus: {
             type: "free_spins",
             match_percentage: 0,
@@ -115,7 +115,7 @@ export const casinos = [
         id: "betcity",
         name: "BetCity",
         slug: "betcity",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1712/01.247.822",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 100,
@@ -180,7 +180,7 @@ export const casinos = [
             notes: "Code: BONUSVIP. Wedkredieten na afhandeling kwalificerende weddenschap. Alleen nieuwe klanten 24+. Uitbetalingen exclusief wedkredieteninzet.",
             last_verified: "2026-03-20"
         },
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1690/01.247.816",
         welcome_bonus: {
             type: "free_spins",
             match_percentage: 0,
@@ -205,6 +205,7 @@ export const casinos = [
         },
         default_slot_rtp: 0.965,
         withdrawal_time_hours: 24,
+        terms_url: "https://extra.bet365.com/promotions/nl/open-account-offer",
         logo_component: "Bet365Logo",
         rating_math: 0,
         last_verified: "2026-03-20"
@@ -213,7 +214,7 @@ export const casinos = [
         id: "betmgm",
         name: "BetMGM",
         slug: "betmgm",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2080/01.294.774",
         live_casino_bonus: {
             type: "cash_match",
             summary: "100% tot €250 cash + €20 Reward Games na 30× rondspeelvoorwaarde. Storting 30× inzetten op live casino.",
@@ -294,7 +295,7 @@ export const casinos = [
         slug: "tonybet",
         welcome_bonus_available: false,
         bonus_category: "sports",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1729",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 0,
@@ -325,7 +326,7 @@ export const casinos = [
         id: "goldrun-casino",
         name: "Goldrun Casino",
         slug: "goldrun-casino",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1631/01.272.522",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 100,
@@ -364,6 +365,7 @@ export const casinos = [
         },
         default_slot_rtp: 0.96,
         withdrawal_time_hours: 24,
+        terms_url: "https://www.goldruncasino.nl/bonus-terms",
         logo_component: "GoldrunLogo",
         rating_math: 0,
         last_verified: "2026-03-20"
@@ -384,7 +386,7 @@ export const casinos = [
             notes: "Geen code nodig. Nieuwe spelers 24+. Free Bet 7 dagen geldig op odds 1.50+. Cashen niet mogelijk op kwalificerende weddenschap.",
             last_verified: "2026-03-20"
         },
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2389/01.326.967",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 100,
@@ -407,6 +409,7 @@ export const casinos = [
         },
         default_slot_rtp: 0.965,
         withdrawal_time_hours: 24,
+        terms_url: "https://www.starcasino.nl/informatie-over-bonussen",
         logo_component: "StarcasinoLogo",
         rating_math: 0,
         last_verified: "2026-03-20"
@@ -415,7 +418,7 @@ export const casinos = [
         id: "casino777",
         name: "Casino777",
         slug: "casino777",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1832/01.256.811",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 100,
@@ -459,7 +462,7 @@ export const casinos = [
             notes: "Geen code nodig. Nieuwe geverifieerde VBET-spelers 24+ in Nederland. Weddenschappen vanaf €10, quotering min. 1.8.",
             last_verified: "2026-03-20"
         },
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2187/01.293.260",
         welcome_bonus: {
             type: "free_spins",
             match_percentage: 0,
@@ -507,7 +510,7 @@ export const casinos = [
             notes: "Code: MAXCIRCUS. Eén keer geldig bij eerste storting. Bets met BetXtra of 'beste hot odds' tellen niet mee. Alleen nieuwe spelers.",
             last_verified: "2026-03-20"
         },
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1830/01.259.448",
         bonus_variants: [
             {
                 id: "circus-cash",
@@ -556,6 +559,7 @@ export const casinos = [
         },
         default_slot_rtp: 0.965,
         withdrawal_time_hours: 24,
+        terms_url: "https://www.circus.nl/nl/welkomstbonus",
         logo_component: "CircusLogo",
         rating_math: 0,
         last_verified: "2026-03-20"
@@ -628,7 +632,7 @@ export const casinos = [
                 notes: "Free spins 30 dagen geldig na claim."
             }
         ],
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2135/01.272.551",
         welcome_bonus: {
             type: "free_spins",
             match_percentage: 0,
@@ -667,7 +671,7 @@ export const casinos = [
         id: "hard-rock-casino",
         name: "Hard Rock Casino",
         slug: "hard-rock-casino",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2250/01.316.607",
         bonus_variants: [
             {
                 id: "hardrock-spins",
@@ -727,7 +731,7 @@ export const casinos = [
         id: "comeon",
         name: "ComeOn",
         slug: "comeon",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2165/01.272.549",
         package_type: "multi_deposit",
         live_casino_bonus: {
             type: "coupons",
@@ -821,7 +825,7 @@ export const casinos = [
         id: "fair-play-online",
         name: "Fair Play Online",
         slug: "fair-play-online",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1605/01.247.159",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 100,
@@ -887,7 +891,7 @@ export const casinos = [
         id: "leovegas",
         name: "LeoVegas",
         slug: "leovegas",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1970/01.297.569",
         tiered_bonus: true,
         package_type: "tiered",
         live_casino_bonus: {
@@ -1016,7 +1020,7 @@ export const casinos = [
         id: "kansino",
         name: "Kansino",
         slug: "kansino",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1653/01.247.166",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 100,
@@ -1048,7 +1052,7 @@ export const casinos = [
         id: "betnation",
         name: "Betnation",
         slug: "betnation",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1949/01.272.482",
         live_casino_bonus: {
             type: "free_chips",
             summary: "€25 gratis Live Tegoed bij je eerste storting.",
@@ -1169,7 +1173,7 @@ export const casinos = [
             notes: "Geen code nodig. Nieuwe spelers 24+. Kwalificerende 1e bet min. €10, quotering 1.50. 5 free bets na afhandeling.",
             last_verified: "2026-03-20"
         },
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1601/01.247.155",
         welcome_bonus: {
             type: "free_spins",
             match_percentage: 0,
@@ -1205,7 +1209,7 @@ export const casinos = [
         slug: "winnitt",
         welcome_bonus_available: false,
         bonus_category: "sports",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1601/01.247.155",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 0,
@@ -1238,7 +1242,7 @@ export const casinos = [
         slug: "ggpoker",
         welcome_bonus_available: false,
         bonus_category: "sports",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1612",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 0,
@@ -1269,7 +1273,7 @@ export const casinos = [
         id: "jacks-nl",
         name: "Jacks.nl",
         slug: "jacks-nl",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1959/01.251.762",
         sports_bonus: {
             type: "free_bet",
             summary: "Krijg €100 aan freebets. 100% Free Bet tot €100 na eerste inzet van min. €10 op odds 1.50.",
@@ -1312,7 +1316,7 @@ export const casinos = [
         id: "one-casino",
         name: "One Casino",
         slug: "one-casino",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2161/01.272.534",
         welcome_bonus: {
             type: "combined",
             match_percentage: 50,
@@ -1335,6 +1339,7 @@ export const casinos = [
         },
         default_slot_rtp: 0.965,
         withdrawal_time_hours: 24,
+        terms_url: "https://nl.onecasino.com/promotions",
         logo_component: "OneCasinoLogo",
         rating_math: 0,
         last_verified: "2026-03-20"
@@ -1343,7 +1348,7 @@ export const casinos = [
         id: "711",
         name: "711",
         slug: "711",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1976/01.259.998",
         sports_bonus: {
             type: "free_bet",
             summary: "7 x €11 aan Free bets. Na afhandeling €10 weddenschap ontvang je 7x €11 Free Bets.",
@@ -1377,6 +1382,7 @@ export const casinos = [
         },
         default_slot_rtp: 0.965,
         withdrawal_time_hours: 24,
+        terms_url: "https://www.711.nl/bonusvoorwaarden",
         logo_component: "SevenElevenLogo",
         rating_math: 0,
         last_verified: "2026-03-20"
@@ -1385,7 +1391,7 @@ export const casinos = [
         id: "getlucky",
         name: "GetLucky",
         slug: "getlucky",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2165/01.272.549",
         live_casino_bonus: {
             type: "coupons",
             summary: "Tot €40 aan Evolution Coupons over 3 stortingen. 1× storting inzetten.",
@@ -1480,7 +1486,7 @@ export const casinos = [
         id: "winz",
         name: "Winz",
         slug: "winz",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2439/01.356.636",
         welcome_bonus: {
             type: "combined",
             match_percentage: 100,
@@ -1510,6 +1516,7 @@ export const casinos = [
         },
         default_slot_rtp: 0.965,
         withdrawal_time_hours: 24,
+        terms_url: "https://www.winz.nl/over-ons/bonus-voorwaarden",
         logo_component: "WinzLogo",
         rating_math: 0,
         last_verified: "2026-03-20"
@@ -1520,7 +1527,7 @@ export const casinos = [
         slug: "zebet",
         welcome_bonus_available: false,
         bonus_category: "sports",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1600/01.257.364",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 0,
@@ -1563,7 +1570,7 @@ export const casinos = [
             notes: "Geen code nodig. 24+. Max inzet €10, max winst €500 per boost. Algemene voorwaarden Bingoal van toepassing.",
             last_verified: "2026-03-20"
         },
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1701/01.247.170",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 100,
@@ -1596,7 +1603,7 @@ export const casinos = [
         id: "hommerson",
         name: "Hommerson",
         slug: "hommerson",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "1831/01.298.745",
         welcome_bonus: {
             type: "deposit_match",
             match_percentage: 200,
@@ -1630,7 +1637,7 @@ export const casinos = [
         id: "lucky-7-casino",
         name: "Lucky 7 Casino",
         slug: "lucky-7-casino",
-        ksa_license: "VUL_KSA_NUMMER_IN",
+        ksa_license: "2287/01.326.328",
         bonus_variants: [
             {
                 id: "lucky7-cash",
