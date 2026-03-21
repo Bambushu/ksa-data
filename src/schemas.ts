@@ -30,7 +30,7 @@ export const welcomeBonusSchema = z.object({
   free_spins_rtp: z.number().min(0).max(1).optional(),
   fixed_wagering_eur: z.number().min(0).optional(),
   max_cashout_eur: z.number().min(0).nullable(),
-  time_limit_days: z.number().min(1),
+  time_limit_days: z.number().min(0),
   game_weightings: gameWeightingsSchema,
   excluded_slots: z.array(z.string()),
   min_odds: z.number().nullable(),
