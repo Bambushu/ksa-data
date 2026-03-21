@@ -95,4 +95,17 @@ export interface Slot {
     volatility: "low" | "medium" | "high";
     provider: string;
 }
+export interface Promotion {
+    id: string;
+    casino_slug: string;
+    title: string;
+    type: "deposit_bonus" | "free_spins" | "cashback" | "tournament" | "other";
+    description: string;
+    bonus_value?: number;
+    wagering_multiplier?: number;
+    starts: string;
+    expires: string;
+    terms_url?: string;
+    last_verified: string;
+}
 //# sourceMappingURL=types.d.ts.map

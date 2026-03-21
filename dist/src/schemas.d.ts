@@ -1223,4 +1223,102 @@ export declare const slotsArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
     volatility: "low" | "medium" | "high";
     provider: string;
 }[]>;
+export declare const promotionSchema: z.ZodObject<{
+    id: z.ZodString;
+    casino_slug: z.ZodString;
+    title: z.ZodString;
+    type: z.ZodEnum<["deposit_bonus", "free_spins", "cashback", "tournament", "other"]>;
+    description: z.ZodString;
+    bonus_value: z.ZodOptional<z.ZodNumber>;
+    wagering_multiplier: z.ZodOptional<z.ZodNumber>;
+    starts: z.ZodString;
+    expires: z.ZodString;
+    terms_url: z.ZodOptional<z.ZodString>;
+    last_verified: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    type: "free_spins" | "cashback" | "other" | "deposit_bonus" | "tournament";
+    id: string;
+    last_verified: string;
+    casino_slug: string;
+    title: string;
+    description: string;
+    starts: string;
+    expires: string;
+    terms_url?: string | undefined;
+    bonus_value?: number | undefined;
+    wagering_multiplier?: number | undefined;
+}, {
+    type: "free_spins" | "cashback" | "other" | "deposit_bonus" | "tournament";
+    id: string;
+    last_verified: string;
+    casino_slug: string;
+    title: string;
+    description: string;
+    starts: string;
+    expires: string;
+    terms_url?: string | undefined;
+    bonus_value?: number | undefined;
+    wagering_multiplier?: number | undefined;
+}>;
+export declare const promotionsArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
+    id: z.ZodString;
+    casino_slug: z.ZodString;
+    title: z.ZodString;
+    type: z.ZodEnum<["deposit_bonus", "free_spins", "cashback", "tournament", "other"]>;
+    description: z.ZodString;
+    bonus_value: z.ZodOptional<z.ZodNumber>;
+    wagering_multiplier: z.ZodOptional<z.ZodNumber>;
+    starts: z.ZodString;
+    expires: z.ZodString;
+    terms_url: z.ZodOptional<z.ZodString>;
+    last_verified: z.ZodString;
+}, "strip", z.ZodTypeAny, {
+    type: "free_spins" | "cashback" | "other" | "deposit_bonus" | "tournament";
+    id: string;
+    last_verified: string;
+    casino_slug: string;
+    title: string;
+    description: string;
+    starts: string;
+    expires: string;
+    terms_url?: string | undefined;
+    bonus_value?: number | undefined;
+    wagering_multiplier?: number | undefined;
+}, {
+    type: "free_spins" | "cashback" | "other" | "deposit_bonus" | "tournament";
+    id: string;
+    last_verified: string;
+    casino_slug: string;
+    title: string;
+    description: string;
+    starts: string;
+    expires: string;
+    terms_url?: string | undefined;
+    bonus_value?: number | undefined;
+    wagering_multiplier?: number | undefined;
+}>, "many">, {
+    type: "free_spins" | "cashback" | "other" | "deposit_bonus" | "tournament";
+    id: string;
+    last_verified: string;
+    casino_slug: string;
+    title: string;
+    description: string;
+    starts: string;
+    expires: string;
+    terms_url?: string | undefined;
+    bonus_value?: number | undefined;
+    wagering_multiplier?: number | undefined;
+}[], {
+    type: "free_spins" | "cashback" | "other" | "deposit_bonus" | "tournament";
+    id: string;
+    last_verified: string;
+    casino_slug: string;
+    title: string;
+    description: string;
+    starts: string;
+    expires: string;
+    terms_url?: string | undefined;
+    bonus_value?: number | undefined;
+    wagering_multiplier?: number | undefined;
+}[]>;
 //# sourceMappingURL=schemas.d.ts.map

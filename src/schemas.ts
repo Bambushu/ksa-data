@@ -147,3 +147,27 @@ export const slotsArraySchema = z.array(slotSchema).superRefine((slots, ctx) => 
     ids.add(slot.id);
   }
 });
+
+export const promotionSchema = z.object({
+  id: z.string().min(1),
+  casino_slug: z.string().min(1),
+  title: z.string().min(1),
+  type: z.enum(["deposit_bonus", "free_spins", "cashback", "tournament", "other"]),
+  description: z.string(),
+  bonus_value: z.number().min(0).optional(),
+  wagering_multiplier: z.number().min(0).optional(),
+  starts: z.string(),
+  expires: z.string(),
+  terms_url: z.string().url().optional(),
+  last_verified: z.string(),
+});
+
+export const promotionsArraySchema = z.array(promotionSchema).superRefine((promos, ctx) => {
+  const ids = new Set<string>();
+  for (const p of promos) {
+    if (ids.has(p.id)) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: `Duplicate promotion id: ${p.id}` });
+    }
+    ids.add(p.id);
+  }
+});
