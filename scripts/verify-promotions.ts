@@ -1,13 +1,56 @@
+/**
+ * PromoGuard — Automated promotions sync tool.
+ * Run with: npx tsx scripts/verify-promotions.ts
+ *
+ * Usage:
+ *   npx tsx scripts/verify-promotions.ts [options]
+ *
+ * Options:
+ *   --dry-run           Don't write changes to src/promotions.ts
+ *   --casino <slug>     Check a single casino
+ *   --no-cache          Ignore cache, re-extract everything
+ *   --json              Output JSON report instead of terminal text
+ */
+
 import { casinos } from "../src/casinos.js";
 import { promotions as storedPromotions } from "../src/promotions.js";
 import type { Promotion } from "../src/types.js";
-import { PROMO_URLS } from "../lib/promoguard/promo-urls.js";
-import { fetchTermsPage } from "../lib/bonusguard/fetcher.js";
-import { readCache, writeCache } from "../lib/bonusguard/cache.js";
+import {
+  fetchTermsPage,
+  cleanPromoHtml,
+  readCache,
+  writeCache,
+  extractPromotions,
+  mergeExtractions,
+  diffPromotions,
+  formatPromoReport,
+  savePromoReport,
+} from "@bambushu/casino-guard";
+import type { PromoDiff, SyncReport } from "@bambushu/casino-guard";
 import { execSync } from "node:child_process";
 import { createHash } from "node:crypto";
+import fs from "node:fs";
+import path from "node:path";
 
-/** Direct OpenClaw fetch — used when regular fetch returns SPA shell */
+// ── ksa-data-specific: Dutch market promo URLs ──────────────────────
+
+const PROMO_URLS: Record<string, string> = {
+  unibet: "https://www.unibet.nl/promotions",
+  casino777: "https://www.casino777.nl/nl/promoties",
+  leovegas: "https://www.leovegas.nl/promoties",
+  toto: "https://www.toto.nl/acties",
+  "jacks-nl": "https://www.jacks.nl/promoties",
+  betnation: "https://www.betnation.nl/promoties",
+  "711": "https://www.711.nl/promoties",
+  kansino: "https://www.kansino.nl/promotions",
+  betcity: "https://www.betcity.nl/promoties",
+  "fair-play-online": "https://fairplaycasino.nl/promoties",
+  circus: "https://www.circus.nl/nl/promoties",
+  // "holland-casino-online" — promoties page only shows "MEER INFO" buttons, no promo details. Needs multi-page scraping.
+};
+
+// ── ksa-data-specific: SPA browser fallback ─────────────────────────
+
 function fetchWithBrowser(url: string): { ok: boolean; html: string; contentHash: string; error?: string } {
   try {
     execSync(`openclaw browser open "${url}"`, { timeout: 15_000, stdio: "pipe" });
@@ -27,14 +70,34 @@ function fetchWithBrowser(url: string): { ok: boolean; html: string; contentHash
     return { ok: false, html: "", contentHash: "", error: `Browser failed: ${err}` };
   }
 }
-import { extractPromotions, cleanPromoHtml } from "../lib/promoguard/extractor.js";
-import { mergeExtractions, diffPromotions, writePromotions } from "../lib/promoguard/syncer.js";
-import { formatSyncReport, saveSyncReport } from "../lib/promoguard/reporter.js";
-import type { PromoDiff, SyncReport } from "../lib/promoguard/types.js";
+
+// ── ksa-data-specific: write promotions to src/promotions.ts ────────
+
+function writePromotions(allPromos: Promotion[]): void {
+  // Sort by casino, then by expiry
+  allPromos.sort((a, b) => {
+    if (a.casino_slug !== b.casino_slug) return a.casino_slug.localeCompare(b.casino_slug);
+    return a.expires.localeCompare(b.expires);
+  });
+
+  const lines = [
+    'import type { Promotion } from "./types.js";',
+    'import { promotionsArraySchema } from "./schemas.js";',
+    "",
+    "export const promotions: Promotion[] = " + JSON.stringify(allPromos, null, 2) + ";",
+    "",
+    "promotionsArraySchema.parse(promotions);",
+    "",
+  ];
+
+  const filePath = path.join(process.cwd(), "src", "promotions.ts");
+  fs.writeFileSync(filePath, lines.join("\n"));
+}
+
+// ── CLI ─────────────────────────────────────────────────────────────
 
 const CACHE_PATH = ".promoguard/cache.json";
 
-// Parse CLI flags
 const args = process.argv.slice(2);
 const flags = {
   dryRun: args.includes("--dry-run"),
@@ -44,7 +107,6 @@ const flags = {
 };
 
 async function main() {
-  // PromoGuard uses its own cache format (raw object access, not BonusGuard's typed entries)
   const cache: Record<string, any> = flags.noCache ? {} : readCache(CACHE_PATH) as any;
   const diffs: PromoDiff[] = [];
   const errors: Array<{ casino_slug: string; casino_name: string; error: string }> = [];
@@ -158,13 +220,13 @@ async function main() {
     },
   };
 
-  saveSyncReport(report);
+  savePromoReport(report);
 
   if (flags.json) {
     console.log(JSON.stringify(report, null, 2));
   } else {
     console.log("");
-    console.log(formatSyncReport(report));
+    console.log(formatPromoReport(report));
   }
 
   // Write promotions unless dry-run

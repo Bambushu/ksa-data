@@ -13,12 +13,91 @@
  *   --json              Output JSON report instead of terminal text
  */
 
-import { loadCasinoData } from "../lib/bonusguard/loader.ts";
-import { fetchTermsPage } from "../lib/bonusguard/fetcher.ts";
-import { cleanHtml, extractBonusData } from "../lib/bonusguard/extractor.ts";
-import { compareBonusData } from "../lib/bonusguard/comparator.ts";
-import { readCache, writeCache, getCacheEntry, setCacheEntry } from "../lib/bonusguard/cache.ts";
-import { formatReport, saveReport, bumpLastVerified } from "../lib/bonusguard/reporter.ts";
+import { casinos } from "../src/casinos.js";
+import {
+  fetchTermsPage,
+  cleanHtml,
+  readCache,
+  writeCache,
+  getCacheEntry,
+  setCacheEntry,
+  extractBonusData,
+  compareBonusData,
+  formatBonusReport,
+  saveBonusReport,
+} from "@bambushu/casino-guard";
+import type { BonusRecord, ExtractionResult, VerificationReport } from "@bambushu/casino-guard";
+import fs from "node:fs";
+import path from "node:path";
+
+// ── ksa-data-specific: load casino data ─────────────────────────────
+
+interface LoadResult {
+  records: BonusRecord[];
+  skipped: Array<{ casino_id: string; casino_name: string; reason: string }>;
+}
+
+function loadCasinoData(filterCasinoId?: string): LoadResult {
+  const records: BonusRecord[] = [];
+  const skipped: LoadResult["skipped"] = [];
+
+  for (const c of casinos) {
+    if (filterCasinoId && c.id !== filterCasinoId) continue;
+
+    if (c.welcome_bonus_available === false) {
+      skipped.push({ casino_id: c.id, casino_name: c.name, reason: "welcome_bonus_available is false" });
+      continue;
+    }
+    if (!c.terms_url) {
+      skipped.push({ casino_id: c.id, casino_name: c.name, reason: "no terms_url" });
+      continue;
+    }
+
+    records.push({
+      casino_id: c.id,
+      casino_name: c.name,
+      terms_url: c.terms_url,
+      bonus_available: true,
+      match_percentage: c.welcome_bonus?.match_percentage ?? null,
+      max_bonus_eur: c.welcome_bonus?.max_bonus_eur ?? null,
+      wagering_requirement: c.welcome_bonus?.wagering_requirement ?? null,
+      wagering_applies_to: c.welcome_bonus?.wagering_applies_to ?? null,
+      bonus_type: c.welcome_bonus?.type ?? null,
+      free_spins: c.welcome_bonus?.free_spins ?? null,
+      min_deposit_eur: c.welcome_bonus?.min_deposit_eur ?? null,
+      time_limit_days: c.welcome_bonus?.time_limit_days ?? null,
+      max_cashout_eur: c.welcome_bonus?.max_cashout_eur ?? null,
+    });
+  }
+
+  return { records, skipped };
+}
+
+// ── ksa-data-specific: bump last_verified in src/casinos.ts ─────────
+
+function bumpLastVerified(confirmedIds: string[], today: string): number {
+  const filePath = path.join(process.cwd(), "src", "casinos.ts");
+  let content = fs.readFileSync(filePath, "utf-8");
+  let count = 0;
+
+  for (const id of confirmedIds) {
+    const idPattern = new RegExp(
+      `(id:\\s*"${id}"[\\s\\S]*?\\n  last_verified:\\s*")\\d{4}-\\d{2}-\\d{2}(")`
+    );
+    const match = content.match(idPattern);
+    if (match) {
+      content = content.replace(idPattern, `$1${today}$2`);
+      count++;
+    }
+  }
+
+  if (count > 0) {
+    fs.writeFileSync(filePath, content);
+  }
+  return count;
+}
+
+// ── CLI ─────────────────────────────────────────────────────────────
 
 const args = process.argv.slice(2);
 const flags = {
@@ -63,7 +142,7 @@ async function main() {
     }
 
     // Stage 3: EXTRACT (with cache)
-    let extraction;
+    let extraction: ExtractionResult;
     const cached = getCacheEntry(cache, record.casino_id, fetched.contentHash, flags.maxCacheAge);
     if (cached) {
       extraction = cached.extraction;
@@ -115,7 +194,7 @@ async function main() {
   const mismatched = results.filter((r) => r.status === "mismatch");
   const errors = results.filter((r) => r.status === "error");
 
-  const report = {
+  const report: VerificationReport = {
     date: today,
     results: [
       ...results,
@@ -136,13 +215,13 @@ async function main() {
     },
   };
 
-  saveReport(report);
+  saveBonusReport(report);
 
   if (flags.json) {
     console.log(JSON.stringify(report, null, 2));
   } else {
     console.log("");
-    console.log(formatReport(report));
+    console.log(formatBonusReport(report));
   }
 
   // Auto-update dates
