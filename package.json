@@ -19,7 +19,8 @@
     "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest",
-    "verify": "npx tsx scripts/verify-bonuses.ts"
+    "verify": "npx tsx scripts/verify-bonuses.ts",
+    "verify:promos": "npx tsx scripts/verify-promotions.ts"
   },
   "dependencies": {
     "zod": "^3.23.8"

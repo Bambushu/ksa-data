@@ -1,0 +1,1 @@
+{"version":3,"file":"reporter.d.ts","sourceRoot":"","sources":["../../../lib/promoguard/reporter.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,UAAU,EAAE,MAAM,YAAY,CAAC;AAE7C,wBAAgB,gBAAgB,CAAC,MAAM,EAAE,UAAU,GAAG,MAAM,CA0C3D;AAED,wBAAgB,cAAc,CAAC,MAAM,EAAE,UAAU,GAAG,IAAI,CAIvD"}
