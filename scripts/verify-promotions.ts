@@ -3,9 +3,31 @@ import { promotions as storedPromotions } from "../src/promotions.js";
 import type { Promotion } from "../src/types.js";
 import { PROMO_URLS } from "../lib/promoguard/promo-urls.js";
 import { fetchTermsPage } from "../lib/bonusguard/fetcher.js";
-import { cleanHtml } from "../lib/bonusguard/extractor.js";
 import { readCache, writeCache } from "../lib/bonusguard/cache.js";
-import { extractPromotions } from "../lib/promoguard/extractor.js";
+import { execSync } from "node:child_process";
+import { createHash } from "node:crypto";
+
+/** Direct OpenClaw fetch — used when regular fetch returns SPA shell */
+function fetchWithBrowser(url: string): { ok: boolean; html: string; contentHash: string; error?: string } {
+  try {
+    execSync(`openclaw browser open "${url}"`, { timeout: 15_000, stdio: "pipe" });
+    execSync(`openclaw browser wait --timeout 5000 --load networkidle`, { timeout: 10_000, stdio: "pipe" }).toString();
+  } catch { /* wait may fail, page might still have loaded */ }
+  try {
+    const text = execSync(
+      `openclaw browser evaluate --fn "(function() { return document.body.innerText; })"`,
+      { timeout: 10_000, encoding: "utf-8" }
+    );
+    if (!text || text.trim().length < 500) {
+      return { ok: false, html: "", contentHash: "", error: "Browser: page content too short" };
+    }
+    const contentHash = createHash("sha256").update(text).digest("hex");
+    return { ok: true, html: text, contentHash };
+  } catch (err) {
+    return { ok: false, html: "", contentHash: "", error: `Browser failed: ${err}` };
+  }
+}
+import { extractPromotions, cleanPromoHtml } from "../lib/promoguard/extractor.js";
 import { mergeExtractions, diffPromotions, writePromotions } from "../lib/promoguard/syncer.js";
 import { formatSyncReport, saveSyncReport } from "../lib/promoguard/reporter.js";
 import type { PromoDiff, SyncReport } from "../lib/promoguard/types.js";
@@ -45,8 +67,19 @@ async function main() {
 
     if (!flags.json) process.stdout.write(`  Checking ${name}...`);
 
-    // Fetch
-    const fetched = await fetchTermsPage(url);
+    // Fetch — try regular fetch first, use browser if cleaned content too thin
+    let fetched = await fetchTermsPage(url);
+    if (fetched.ok) {
+      const cleaned = cleanPromoHtml(fetched.html);
+      if (cleaned.length < 2000) {
+        // Page is likely JS-rendered (SPA shell) — use browser to render
+        if (!flags.json) process.stdout.write(" (SPA detected, using browser)");
+        const browserResult = fetchWithBrowser(url);
+        if (browserResult.ok) {
+          fetched = { ...fetched, html: browserResult.html, contentHash: browserResult.contentHash };
+        }
+      }
+    }
     if (!fetched.ok) {
       if (!flags.json) console.log(` ✕ ${fetched.error}`);
       errors.push({ casino_slug: slug, casino_name: name, error: fetched.error ?? "fetch failed" });
@@ -64,7 +97,7 @@ async function main() {
       if (!flags.json) process.stdout.write(" (cached)");
     } else {
       try {
-        const pageText = cleanHtml(fetched.html);
+        const pageText = cleanPromoHtml(fetched.html);
         extracted = await extractPromotions(slug, pageText);
         cache[cacheKey] = {
           content_hash: fetched.contentHash,

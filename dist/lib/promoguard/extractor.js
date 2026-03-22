@@ -1,5 +1,28 @@
 import { execSync } from "node:child_process";
 const MIN_CONFIDENCE = 0.5;
+const MAX_CHARS = 48_000; // ~12k tokens — promo pages are larger than terms pages
+/** Aggressive HTML cleaner for promo pages. Strips more noise than BonusGuard's cleanHtml. */
+export function cleanPromoHtml(html) {
+    let cleaned = html;
+    // Strip script, style, nav, footer, header, noscript, iframe, svg tags and content
+    for (const tag of ["script", "style", "nav", "footer", "header", "noscript", "iframe", "svg"]) {
+        cleaned = cleaned.replace(new RegExp(`<${tag}[\\s\\S]*?</${tag}>`, "gi"), "");
+    }
+    // Strip all HTML attributes (kills data-*, class, style, onclick, JSON-in-attributes)
+    cleaned = cleaned.replace(/<([a-z][a-z0-9]*)\s[^>]*>/gi, "<$1>");
+    // Strip all tags
+    cleaned = cleaned.replace(/<[^>]+>/g, " ");
+    // Strip JSON-like objects that leak through (common in SPA pages)
+    cleaned = cleaned.replace(/\{[^{}]*"key"[^{}]*\}/g, " ");
+    cleaned = cleaned.replace(/\[\{[^[\]]{200,}\}\]/g, " ");
+    // Collapse whitespace
+    cleaned = cleaned.replace(/\s+/g, " ").trim();
+    // Truncate
+    if (cleaned.length > MAX_CHARS) {
+        cleaned = cleaned.slice(0, MAX_CHARS) + "\n[truncated]";
+    }
+    return cleaned;
+}
 const EXTRACTION_PROMPT = `You are extracting ACTIVE PROMOTIONS (NOT the welcome bonus) from a Dutch casino promotions page.
 
 Return ONLY a valid JSON array. Each element must have this exact structure:

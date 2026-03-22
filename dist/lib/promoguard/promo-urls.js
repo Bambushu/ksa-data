@@ -9,8 +9,8 @@ export const PROMO_URLS = {
     "711": "https://www.711.nl/promoties",
     kansino: "https://www.kansino.nl/promotions",
     betcity: "https://www.betcity.nl/promoties",
-    "fair-play-online": "https://www.fairplayonline.nl/promoties",
+    "fair-play-online": "https://fairplaycasino.nl/promoties",
     circus: "https://www.circus.nl/nl/promoties",
-    "holland-casino-online": "https://www.hollandcasino.nl/online/acties",
+    // "holland-casino-online" — promoties page only shows "MEER INFO" buttons, no promo details. Needs multi-page scraping.
 };
 //# sourceMappingURL=promo-urls.js.map
