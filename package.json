@@ -17,7 +17,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "verify": "npx tsx scripts/verify-bonuses.ts",
-    "verify:promos": "npx tsx scripts/verify-promotions.ts"
+    "verify:promos": "npx tsx scripts/verify-promotions.ts",
+    "daily-verify": "npx tsx scripts/daily-verify.ts",
+    "daily-verify:dry": "npx tsx scripts/daily-verify.ts --dry-run"
   },
   "dependencies": {
     "@bambushu/casino-guard": "github:Bambushu/casino-guard",
