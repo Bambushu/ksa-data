@@ -18,7 +18,7 @@ export const casinos: Casino[] = [
     time_limit_days: 30,
     eligible_games: ["Geselecteerde live casino spellen per week"],
     notes: "Speel minimaal €10 op live casino in week 1. Log in weken 2-4 voor resterende chips. Chips €0,10 p.st. Winsten direct als cash.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     welcome_bonus: {
     type: "free_spins",
@@ -48,7 +48,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.hollandcasino.nl/promoties/casino/welcome-offer",
     logo_component: "HcLogo",
     rating_math: 0,
-    last_verified: "2026-03-23"
+    last_verified: "2026-03-24"
   },
   {
     id: "unibet",
@@ -70,7 +70,7 @@ export const casinos: Casino[] = [
       "Live Crazy Time"
     ],
     notes: "€25 op slots inzetten om te kwalificeren. €10 per dag over 4 dagen. Winsten = cash.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     sports_bonus: {
     type: "free_bet",
@@ -81,7 +81,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: 7,
     notes: "Geen code nodig. Free bets na afhandeling kwalificerende bet. Alleen 24+. Ook €180 Refer-a-friend bonus via uitnodigingslink.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     ksa_license: "1730/01.267.175",
     welcome_bonus: {
@@ -111,7 +111,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.unibet.nl/promotions/welcome-to-casino",
     logo_component: "UnibetLogo",
     rating_math: 0,
-    last_verified: "2026-03-23"
+    last_verified: "2026-03-24"
   },
   {
     id: "betcity",
@@ -164,7 +164,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.betcity.nl/promoties/casinowelkomstbonus",
     logo_component: "BetcityLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "bet365",
@@ -180,7 +180,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: null,
     notes: "Code: BONUSVIP. Wedkredieten na afhandeling kwalificerende weddenschap. Alleen nieuwe klanten 24+. Uitbetalingen exclusief wedkredieteninzet.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     ksa_license: "1690/01.247.816",
     welcome_bonus: {
@@ -210,7 +210,7 @@ export const casinos: Casino[] = [
     terms_url: "https://extra.bet365.com/promotions/nl/open-account-offer",
     logo_component: "Bet365Logo",
     rating_math: 0,
-    last_verified: "2026-03-23"
+    last_verified: "2026-03-24"
   },
   {
     id: "betmgm",
@@ -232,7 +232,7 @@ export const casinos: Casino[] = [
       "Evolution baccarat"
     ],
     notes: "€20 Reward Games automatisch na rondspeelvoorwaarde. Max winst Reward Games €200. Cash bonus direct opneembaar na 30× inzet. Alleen 24+.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     sports_bonus: {
     type: "free_bet",
@@ -243,7 +243,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: null,
     notes: "Geen code nodig. Selecteer Sport Welkomstbonus onder Mijn Aanbiedingen. Na afwikkeling weddenschap.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     bonus_variants: [
       {
@@ -289,7 +289,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.betmgm.nl/promoties/voorwaarden",
     logo_component: "BetMgmLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "tonybet",
@@ -322,7 +322,7 @@ export const casinos: Casino[] = [
     withdrawal_time_hours: 24,
     logo_component: "TonybetLogo",
     rating_math: 0,
-    last_verified: "2026-03-23"
+    last_verified: "2026-03-24"
   },
   {
     id: "goldrun-casino",
@@ -370,7 +370,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.goldruncasino.nl/bonus-terms",
     logo_component: "GoldrunLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "starcasino",
@@ -386,7 +386,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 5,
     time_limit_days: 7,
     notes: "Geen code nodig. Nieuwe spelers 24+. Free Bet 7 dagen geldig op odds 1.50+. Cashen niet mogelijk op kwalificerende weddenschap.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     ksa_license: "2389/01.326.967",
     welcome_bonus: {
@@ -414,7 +414,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.starcasino.nl/informatie-over-bonussen",
     logo_component: "StarcasinoLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "casino777",
@@ -446,7 +446,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.casino777.nl/bonusbeleid",
     logo_component: "Casino777Logo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "vbet",
@@ -462,7 +462,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: null,
     notes: "Geen code nodig. Nieuwe geverifieerde VBET-spelers 24+ in Nederland. Weddenschappen vanaf €10, quotering min. 1.8.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     ksa_license: "2187/01.293.260",
     welcome_bonus: {
@@ -494,7 +494,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.vbet.nl/nl/promotions/all",
     logo_component: "VbetLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "circus",
@@ -511,7 +511,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 20,
     time_limit_days: null,
     notes: "Code: MAXCIRCUS. Eén keer geldig bij eerste storting. Bets met BetXtra of 'beste hot odds' tellen niet mee. Alleen nieuwe spelers.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     ksa_license: "1830/01.259.448",
     bonus_variants: [
@@ -566,7 +566,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.circus.nl/nl/welkomstbonus",
     logo_component: "CircusLogo",
     rating_math: 0,
-    last_verified: "2026-03-23"
+    last_verified: "2026-03-24"
   },
   {
     id: "888",
@@ -584,7 +584,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: 30,
     notes: "Geen code nodig. Nieuwe spelers 24+. Min. €10 per storting. Free bet inzet niet geretourneerd.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     live_casino_bonus: {
     type: "free_chips",
@@ -596,7 +596,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 20,
     time_limit_days: 30,
     notes: "Per storting (max 3): minimaal €20. Free Chips op geselecteerde Evolution-spellen. Max winst €1.000 per Free Chips bonus. Alleen 24+.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     bonus_variants: [
       {
@@ -669,7 +669,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.888.nl/nl/promotions",
     logo_component: "Casino888Logo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "hard-rock-casino",
@@ -741,7 +741,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.hardrockcasino.nl/bonusvoorwaarden",
     logo_component: "HardRockLogo",
     rating_math: 0,
-    last_verified: "2026-03-23"
+    last_verified: "2026-03-24"
   },
   {
     id: "comeon",
@@ -767,7 +767,7 @@ export const casinos: Casino[] = [
       "Funky Time"
     ],
     notes: "Per storting kies je free spins óf Evolution Coupon. €20+€10+€10 over 3 stortingen. Winsten opneembaar na 1× storting inzetten.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     multi_deposit_amounts: [20, 20],
     bonus_variants: [
@@ -837,7 +837,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.comeon.nl/bonusvoorwaarden",
     logo_component: "ComeOnLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "fair-play-online",
@@ -904,7 +904,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.fairplaycasino.nl/promoties/welkomstbonus",
     logo_component: "FairPlayLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "leovegas",
@@ -924,7 +924,7 @@ export const casinos: Casino[] = [
     time_limit_days: 14,
     eligible_games: ["Playtech live tafels"],
     notes: "€5 chips bij Goud/Platinum casino welkomstpakket. Apart Live Casino Welkomstpakket beschikbaar met tot €50 chips en 30× rondspeelvoorwaarde. Chips 72 uur geldig.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     sports_bonus: {
     type: "free_bet",
@@ -935,7 +935,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: null,
     time_limit_days: 14,
     notes: "Geen code nodig. Nieuwe spelers 24+ via affiliate link. Vervangt casino welkomstbonus. Na storting en afronding kwalificerende weddenschap.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     bonus_variants: [
       {
@@ -1033,7 +1033,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.leovegas.com",
     logo_component: "LeovegasLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "kansino",
@@ -1102,7 +1102,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.kansino.nl/bonusvoorwaarden",
     logo_component: "KansinoLogo",
     rating_math: 0,
-    last_verified: "2026-03-23"
+    last_verified: "2026-03-24"
   },
   {
     id: "betnation",
@@ -1123,7 +1123,7 @@ export const casinos: Casino[] = [
       "Live roulette"
     ],
     notes: "Gratis live tegoed bij eerste storting. Details op Betnation website.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     package_type: "additive",
     sports_bonus: {
@@ -1135,7 +1135,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: null,
     notes: "Geen code nodig. 24+. Free Bets op breed scala aan sportwedstrijden.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     bonus_variants: [
       {
@@ -1198,7 +1198,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.betnation.nl/promoties",
     logo_component: "BetnationLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "toto",
@@ -1218,7 +1218,7 @@ export const casinos: Casino[] = [
     time_limit_days: 7,
     eligible_games: ["TOTO Lightning Roulette"],
     notes: "Stort minimaal €20 en speel €20 in TOTO Casino. Claim via Mijn Bonus pagina. Chips 7 dagen geldig. Winsten = cash. Alleen 24+.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     sports_bonus: {
     type: "free_bet",
@@ -1229,7 +1229,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: null,
     notes: "Geen code nodig. Nieuwe spelers 24+. Kwalificerende 1e bet min. €10, quotering 1.50. 5 free bets na afhandeling.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     ksa_license: "1601/01.247.155",
     welcome_bonus: {
@@ -1259,7 +1259,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.toto.nl/welkomstbonus/casino",
     logo_component: "TotoLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "winnitt",
@@ -1292,7 +1292,7 @@ export const casinos: Casino[] = [
     withdrawal_time_hours: 24,
     logo_component: "WinnittLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "ggpoker",
@@ -1325,7 +1325,7 @@ export const casinos: Casino[] = [
     withdrawal_time_hours: 24,
     logo_component: "GgpokerLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "jacks-nl",
@@ -1342,7 +1342,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: 7,
     notes: "Geen code nodig. Nieuwe deelnemers 24+. Free Bet 7 dagen geldig.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     welcome_bonus: {
     type: "combined",
@@ -1369,7 +1369,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.jacks.nl/promoties",
     logo_component: "JacksLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "one-casino",
@@ -1401,7 +1401,7 @@ export const casinos: Casino[] = [
     terms_url: "https://nl.onecasino.com/promotions",
     logo_component: "OneCasinoLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "711",
@@ -1417,7 +1417,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: null,
     notes: "Geen code nodig. Welkomstbonus sportsbook.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     welcome_bonus: {
     type: "deposit_match",
@@ -1444,7 +1444,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.711.nl/bonusvoorwaarden",
     logo_component: "SevenElevenLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "getlucky",
@@ -1469,7 +1469,7 @@ export const casinos: Casino[] = [
       "Funky Time"
     ],
     notes: "Per storting kies je free spins óf Evolution Coupon. Couponwaarde afhankelijk van stortingsbedrag (€3-€10 per coupon).",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     package_type: "multi_deposit",
     multi_deposit_amounts: [20, 20],
@@ -1539,7 +1539,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.getlucky.nl/promoties/casino-welkomstbonus",
     logo_component: "GetLuckyLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "winz",
@@ -1578,7 +1578,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.winz.nl/over-ons/bonus-voorwaarden",
     logo_component: "WinzLogo",
     rating_math: 0,
-    last_verified: "2026-03-23"
+    last_verified: "2026-03-24"
   },
   {
     id: "zebet",
@@ -1611,7 +1611,7 @@ export const casinos: Casino[] = [
     withdrawal_time_hours: 24,
     logo_component: "ZebetLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "bingoal",
@@ -1627,7 +1627,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     time_limit_days: null,
     notes: "Geen code nodig. 24+. Max inzet €10, max winst €500 per boost. Algemene voorwaarden Bingoal van toepassing.",
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
     ksa_license: "1701/01.247.170",
     welcome_bonus: {
@@ -1656,7 +1656,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.bingoal.nl/nl/casino",
     logo_component: "BingoalLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "hommerson",
@@ -1690,7 +1690,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.hommerson.nl",
     logo_component: "HommersonLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   },
   {
     id: "lucky-7-casino",
@@ -1746,7 +1746,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.lucky7casino.nl",
     logo_component: "Lucky7Logo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-24"
   }
 ];
 
