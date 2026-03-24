@@ -31,7 +31,7 @@ export const casinos: Casino[] = [
     min_deposit_eur: 10,
     qualifying_wager_eur: 40,
     max_cashout_eur: null,
-    time_limit_days: 28,
+    time_limit_days: 30,
     game_weightings: {
     slots: 1,
     live_casino: 0,
@@ -48,7 +48,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.hollandcasino.nl/promoties/casino/welcome-offer",
     logo_component: "HcLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-23"
   },
   {
     id: "unibet",
@@ -91,7 +91,7 @@ export const casinos: Casino[] = [
     free_spins: 125,
     free_spins_value_eur: 0.4,
     free_spins_rtp: 0.9608,
-    wagering_requirement: 1,
+    wagering_requirement: 0,
     wagering_applies_to: "bonus",
     min_deposit_eur: 25,
     qualifying_wager_eur: 25,
@@ -111,7 +111,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.unibet.nl/promotions/welcome-to-casino",
     logo_component: "UnibetLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-23"
   },
   {
     id: "betcity",
@@ -191,11 +191,11 @@ export const casinos: Casino[] = [
     notes: "Aantal spins is variabel (10–500). Je ontvangt 10 onthullingen met elk 5, 10, 20 of 50 spins. Het gemiddelde is ~110 spins. EV is berekend op basis van dit gemiddelde.",
     free_spins_value_eur: 0.2,
     free_spins_rtp: 0.95834,
-    wagering_requirement: 0,
+    wagering_requirement: 1,
     wagering_applies_to: "bonus",
     min_deposit_eur: 10,
     max_cashout_eur: null,
-    time_limit_days: 15,
+    time_limit_days: 30,
     game_weightings: {
     slots: 1,
     live_casino: 0,
@@ -210,7 +210,7 @@ export const casinos: Casino[] = [
     terms_url: "https://extra.bet365.com/promotions/nl/open-account-offer",
     logo_component: "Bet365Logo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-23"
   },
   {
     id: "betmgm",
@@ -322,7 +322,7 @@ export const casinos: Casino[] = [
     withdrawal_time_hours: 24,
     logo_component: "TonybetLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-23"
   },
   {
     id: "goldrun-casino",
@@ -501,6 +501,7 @@ export const casinos: Casino[] = [
     name: "Circus.nl",
     slug: "circus",
     bonus_category: "mixed",
+    package_type: "choice",
     sports_bonus: {
     type: "free_bet",
     summary: "Claim €250 aan freebets. Min. €20 in echt geld betten (min. odd 1.60) om freebet te activeren.",
@@ -523,7 +524,8 @@ export const casinos: Casino[] = [
       max_bonus_eur: 250,
       wagering_requirement: 25,
       wagering_applies_to: "bonus",
-      notes: "Speltypes met verschillende contributie; sportsbets min. odd 1.60 in uitgebreide voorwaarden."
+      time_limit_days: 30,
+      notes: "Spelcontributie: slots 100%, sportsbets (min. odd 1.60) 100%, live casino/tafelspellen 3× hogere inzeteis."
     },
       {
       id: "circus-spins",
@@ -532,10 +534,10 @@ export const casinos: Casino[] = [
       min_deposit_eur: 20,
       free_spins: 100,
       free_spins_value_eur: 0.2,
-      qualifying_wager_eur: 20,
-      wagering_requirement: 1,
+      wagering_requirement: 0,
       wagering_applies_to: "bonus",
-      notes: "Winsten uit spins direct cash; free spins 48 uur geldig."
+      time_limit_days: 2,
+      notes: "Geen inzetvoorwaarden — winsten direct cash. Spins 48 uur geldig. Beschikbare slots: Starburst, Gonzo's Quest Megaways, Big Bass Bonanza, Gates of Olympus, o.a."
     }
     ],
     welcome_bonus: {
@@ -564,7 +566,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.circus.nl/nl/welkomstbonus",
     logo_component: "CircusLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-23"
   },
   {
     id: "888",
@@ -674,7 +676,19 @@ export const casinos: Casino[] = [
     name: "Hard Rock Casino",
     slug: "hard-rock-casino",
     ksa_license: "2250/01.316.607",
+    package_type: "choice",
     bonus_variants: [
+      {
+      id: "hardrock-cash",
+      name: "100% tot €100 cash",
+      type: "deposit_match",
+      min_deposit_eur: 0.01,
+      match_percentage: 100,
+      max_bonus_eur: 100,
+      wagering_requirement: 30,
+      wagering_applies_to: "bonus",
+      notes: "Geen vervaldatum. Spelcontributie: slots 100%, game shows 25%, video poker 20%, tafelspellen 10%."
+    },
       {
       id: "hardrock-spins",
       name: "250 free spins",
@@ -685,40 +699,40 @@ export const casinos: Casino[] = [
       qualifying_wager_eur: 25,
       wagering_requirement: 1,
       wagering_applies_to: "bonus",
-      notes: "Spins op Big Bass Vegas Double Down Deluxe."
+      time_limit_days: 30,
+      notes: "Spins op Big Bass Vegas Double Down Deluxe. Stort min. €1, zet €25 in op slots."
     },
       {
-      id: "hardrock-cash",
-      name: "100% tot €100 cash",
-      type: "deposit_match",
-      min_deposit_eur: 0.01,
-      match_percentage: 100,
-      max_bonus_eur: 100,
-      wagering_requirement: 30,
+      id: "hardrock-live",
+      name: "€20 Live Casino voucher",
+      type: "no_deposit",
+      min_deposit_eur: 1,
+      max_bonus_eur: 20,
+      qualifying_wager_eur: 20,
+      wagering_requirement: 1,
       wagering_applies_to: "bonus",
-      notes: "Historische/alternatieve variant."
+      time_limit_days: 30,
+      notes: "€20 Evolution voucher. Zet €20 in op Monopoly Big Baller, Crazy Time, XXXtreme Lightning Roulette, of Easy Blackjack."
     }
     ],
     welcome_bonus: {
-    type: "free_spins",
-    match_percentage: 0,
-    max_bonus_eur: 0,
-    free_spins: 250,
-    free_spins_value_eur: 0.1,
-    wagering_requirement: 1,
+    type: "deposit_match",
+    match_percentage: 100,
+    max_bonus_eur: 100,
+    free_spins: 0,
+    free_spins_value_eur: 0,
+    wagering_requirement: 30,
     wagering_applies_to: "bonus",
-    min_deposit_eur: 1,
-    qualifying_wager_eur: 25,
+    min_deposit_eur: 0.01,
     max_cashout_eur: null,
-    time_limit_days: 30,
+    time_limit_days: 0,
     game_weightings: {
     slots: 1,
     live_casino: 0.25,
-    table_games: 0.2,
-    video_poker: 0.25
+    table_games: 0.1,
+    video_poker: 0.2
   },
-    excluded_slots: ["Free spins alleen op Big Bass Vegas Double Down Deluxe"],
-    max_bet_per_spin_eur: 6,
+    excluded_slots: [],
     free_spins_rtp: 0.9671,
     min_odds: null
   },
@@ -727,7 +741,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.hardrockcasino.nl/bonusvoorwaarden",
     logo_component: "HardRockLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-23"
   },
   {
     id: "comeon",
@@ -759,14 +773,16 @@ export const casinos: Casino[] = [
     bonus_variants: [
       {
       id: "comeon-1st",
-      name: "1e storting: 100 spins Big Bass Splash",
+      name: "1e storting: 200 spins Big Bass Splash",
       type: "free_spins",
       min_deposit_eur: 20,
-      free_spins: 100,
+      free_spins: 200,
       free_spins_value_eur: 0.2,
+      max_bonus_eur: 40,
       wagering_requirement: 1,
       wagering_applies_to: "bonus",
       fixed_wagering_eur: 20,
+      time_limit_days: 30,
       notes: "1× storting op slots."
     },
       {
@@ -828,6 +844,7 @@ export const casinos: Casino[] = [
     name: "Fair Play Online",
     slug: "fair-play-online",
     ksa_license: "1605/01.247.159",
+    package_type: "tiered",
     welcome_bonus: {
     type: "deposit_match",
     match_percentage: 100,
@@ -1023,6 +1040,43 @@ export const casinos: Casino[] = [
     name: "Kansino",
     slug: "kansino",
     ksa_license: "1653/01.247.166",
+    package_type: "choice",
+    bonus_variants: [
+      {
+      id: "kansino-cash",
+      name: "100% tot €200",
+      type: "deposit_match",
+      min_deposit_eur: 20,
+      match_percentage: 100,
+      max_bonus_eur: 200,
+      wagering_requirement: 30,
+      wagering_applies_to: "bonus",
+      notes: "100% op eerste storting. Min. €20."
+    },
+      {
+      id: "kansino-spins",
+      name: "250 Welkomstspins",
+      type: "free_spins",
+      min_deposit_eur: 10,
+      free_spins: 250,
+      free_spins_value_eur: 0.1,
+      wagering_requirement: 25,
+      wagering_applies_to: "winnings",
+      time_limit_days: 30,
+      notes: "250 spins op Bill & Coin. Min. storting €10. 25× inzeteis op winsten. Actie geldig t/m 31 maart 2026."
+    },
+      {
+      id: "kansino-nodeposit",
+      name: "€25 gratis bonus",
+      type: "no_deposit",
+      min_deposit_eur: 0,
+      max_bonus_eur: 25,
+      wagering_requirement: 30,
+      wagering_applies_to: "bonus",
+      time_limit_days: 30,
+      notes: "Geen storting vereist. €25 bonusgeld. 30× inzeteis. Actie geldig t/m 31 maart 2026."
+    }
+    ],
     welcome_bonus: {
     type: "deposit_match",
     match_percentage: 100,
@@ -1048,7 +1102,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.kansino.nl/bonusvoorwaarden",
     logo_component: "KansinoLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-23"
   },
   {
     id: "betnation",
@@ -1151,6 +1205,8 @@ export const casinos: Casino[] = [
     name: "TOTO",
     slug: "toto",
     bonus_category: "mixed",
+    package_type: "multi_deposit",
+    multi_deposit_amounts: [20, 20, 20],
     live_casino_bonus: {
     type: "free_chips",
     summary: "€50 Gratis Chips voor TOTO Lightning Roulette. Stort €20, speel €20 in casino.",
@@ -1276,6 +1332,7 @@ export const casinos: Casino[] = [
     name: "Jacks.nl",
     slug: "jacks-nl",
     ksa_license: "1959/01.251.762",
+    package_type: "additive",
     sports_bonus: {
     type: "free_bet",
     summary: "Krijg €100 aan freebets. 100% Free Bet tot €100 na eerste inzet van min. €10 op odds 1.50.",
@@ -1288,11 +1345,11 @@ export const casinos: Casino[] = [
     last_verified: "2026-03-20"
   },
     welcome_bonus: {
-    type: "deposit_match",
+    type: "combined",
     match_percentage: 100,
     max_bonus_eur: 250,
-    free_spins: 0,
-    free_spins_value_eur: 0,
+    free_spins: 50,
+    free_spins_value_eur: 0.2,
     wagering_requirement: 30,
     wagering_applies_to: "bonus",
     min_deposit_eur: 10,
@@ -1521,7 +1578,7 @@ export const casinos: Casino[] = [
     terms_url: "https://www.winz.nl/over-ons/bonus-voorwaarden",
     logo_component: "WinzLogo",
     rating_math: 0,
-    last_verified: "2026-03-20"
+    last_verified: "2026-03-23"
   },
   {
     id: "zebet",

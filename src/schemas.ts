@@ -53,6 +53,8 @@ export const bonusVariantSchema = z.object({
   fixed_wagering_eur: z.number().min(0).optional(),
   free_spins_rtp: z.number().min(0).max(1).optional(),
   free_spins_wagering_requirement: z.number().min(0).optional(),
+  time_limit_days: z.number().min(0).optional(),
+  max_cashout_eur: z.number().min(0).nullable().optional(),
   notes: z.string().optional(),
 });
 
@@ -97,7 +99,7 @@ export const casinoSchema = z.object({
   welcome_bonus_available: z.boolean().optional(),
   bonus_category: z.enum(["casino", "sports", "mixed"]).optional(),
   tiered_bonus: z.boolean().optional(),
-  package_type: z.enum(["single", "tiered", "multi_deposit", "additive"]).optional(),
+  package_type: z.enum(["single", "tiered", "multi_deposit", "additive", "choice"]).optional(),
   multi_deposit_amounts: z.array(z.number()).optional(),
 
   welcome_bonus: welcomeBonusSchema,

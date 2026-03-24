@@ -65,6 +65,8 @@ export interface BonusVariant {
     fixed_wagering_eur?: number;
     free_spins_rtp?: number;
     free_spins_wagering_requirement?: number;
+    time_limit_days?: number;
+    max_cashout_eur?: number | null;
     notes?: string;
 }
 export interface Casino {
@@ -81,7 +83,7 @@ export interface Casino {
     welcome_bonus_available?: boolean;
     bonus_category?: "casino" | "sports" | "mixed";
     tiered_bonus?: boolean;
-    package_type?: "single" | "tiered" | "multi_deposit" | "additive";
+    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | "choice";
     multi_deposit_amounts?: number[];
     welcome_bonus: WelcomeBonus;
     sports_bonus?: SportsBonus;

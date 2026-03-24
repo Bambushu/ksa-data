@@ -121,6 +121,8 @@ export declare const bonusVariantSchema: z.ZodObject<{
     fixed_wagering_eur: z.ZodOptional<z.ZodNumber>;
     free_spins_rtp: z.ZodOptional<z.ZodNumber>;
     free_spins_wagering_requirement: z.ZodOptional<z.ZodNumber>;
+    time_limit_days: z.ZodOptional<z.ZodNumber>;
+    max_cashout_eur: z.ZodOptional<z.ZodNullable<z.ZodNumber>>;
     notes: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     type: "deposit_match" | "free_spins" | "no_deposit" | "cashback" | "combined";
@@ -137,6 +139,8 @@ export declare const bonusVariantSchema: z.ZodObject<{
     free_spins_wagering_requirement?: number | undefined;
     free_spins_rtp?: number | undefined;
     fixed_wagering_eur?: number | undefined;
+    max_cashout_eur?: number | null | undefined;
+    time_limit_days?: number | undefined;
     notes?: string | undefined;
 }, {
     type: "deposit_match" | "free_spins" | "no_deposit" | "cashback" | "combined";
@@ -153,6 +157,8 @@ export declare const bonusVariantSchema: z.ZodObject<{
     free_spins_wagering_requirement?: number | undefined;
     free_spins_rtp?: number | undefined;
     fixed_wagering_eur?: number | undefined;
+    max_cashout_eur?: number | null | undefined;
+    time_limit_days?: number | undefined;
     notes?: string | undefined;
 }>;
 export declare const sportsBonusSchema: z.ZodObject<{
@@ -237,7 +243,7 @@ export declare const casinoSchema: z.ZodObject<{
     welcome_bonus_available: z.ZodOptional<z.ZodBoolean>;
     bonus_category: z.ZodOptional<z.ZodEnum<["casino", "sports", "mixed"]>>;
     tiered_bonus: z.ZodOptional<z.ZodBoolean>;
-    package_type: z.ZodOptional<z.ZodEnum<["single", "tiered", "multi_deposit", "additive"]>>;
+    package_type: z.ZodOptional<z.ZodEnum<["single", "tiered", "multi_deposit", "additive", "choice"]>>;
     multi_deposit_amounts: z.ZodOptional<z.ZodArray<z.ZodNumber, "many">>;
     welcome_bonus: z.ZodObject<{
         type: z.ZodEnum<["deposit_match", "free_spins", "no_deposit", "cashback", "combined"]>;
@@ -411,6 +417,8 @@ export declare const casinoSchema: z.ZodObject<{
         fixed_wagering_eur: z.ZodOptional<z.ZodNumber>;
         free_spins_rtp: z.ZodOptional<z.ZodNumber>;
         free_spins_wagering_requirement: z.ZodOptional<z.ZodNumber>;
+        time_limit_days: z.ZodOptional<z.ZodNumber>;
+        max_cashout_eur: z.ZodOptional<z.ZodNullable<z.ZodNumber>>;
         notes: z.ZodOptional<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         type: "deposit_match" | "free_spins" | "no_deposit" | "cashback" | "combined";
@@ -427,6 +435,8 @@ export declare const casinoSchema: z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }, {
         type: "deposit_match" | "free_spins" | "no_deposit" | "cashback" | "combined";
@@ -443,6 +453,8 @@ export declare const casinoSchema: z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }>, "many">>;
 }, "strip", z.ZodTypeAny, {
@@ -486,7 +498,7 @@ export declare const casinoSchema: z.ZodObject<{
     welcome_bonus_available?: boolean | undefined;
     bonus_category?: "casino" | "sports" | "mixed" | undefined;
     tiered_bonus?: boolean | undefined;
-    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | undefined;
+    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | "choice" | undefined;
     multi_deposit_amounts?: number[] | undefined;
     sports_bonus?: {
         type: "free_bet" | "profit_boost" | "odds_boost" | "bet_x_get_y" | "other";
@@ -527,6 +539,8 @@ export declare const casinoSchema: z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }[] | undefined;
 }, {
@@ -570,7 +584,7 @@ export declare const casinoSchema: z.ZodObject<{
     welcome_bonus_available?: boolean | undefined;
     bonus_category?: "casino" | "sports" | "mixed" | undefined;
     tiered_bonus?: boolean | undefined;
-    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | undefined;
+    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | "choice" | undefined;
     multi_deposit_amounts?: number[] | undefined;
     sports_bonus?: {
         type: "free_bet" | "profit_boost" | "odds_boost" | "bet_x_get_y" | "other";
@@ -611,6 +625,8 @@ export declare const casinoSchema: z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }[] | undefined;
 }>;
@@ -628,7 +644,7 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
     welcome_bonus_available: z.ZodOptional<z.ZodBoolean>;
     bonus_category: z.ZodOptional<z.ZodEnum<["casino", "sports", "mixed"]>>;
     tiered_bonus: z.ZodOptional<z.ZodBoolean>;
-    package_type: z.ZodOptional<z.ZodEnum<["single", "tiered", "multi_deposit", "additive"]>>;
+    package_type: z.ZodOptional<z.ZodEnum<["single", "tiered", "multi_deposit", "additive", "choice"]>>;
     multi_deposit_amounts: z.ZodOptional<z.ZodArray<z.ZodNumber, "many">>;
     welcome_bonus: z.ZodObject<{
         type: z.ZodEnum<["deposit_match", "free_spins", "no_deposit", "cashback", "combined"]>;
@@ -802,6 +818,8 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
         fixed_wagering_eur: z.ZodOptional<z.ZodNumber>;
         free_spins_rtp: z.ZodOptional<z.ZodNumber>;
         free_spins_wagering_requirement: z.ZodOptional<z.ZodNumber>;
+        time_limit_days: z.ZodOptional<z.ZodNumber>;
+        max_cashout_eur: z.ZodOptional<z.ZodNullable<z.ZodNumber>>;
         notes: z.ZodOptional<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         type: "deposit_match" | "free_spins" | "no_deposit" | "cashback" | "combined";
@@ -818,6 +836,8 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }, {
         type: "deposit_match" | "free_spins" | "no_deposit" | "cashback" | "combined";
@@ -834,6 +854,8 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }>, "many">>;
 }, "strip", z.ZodTypeAny, {
@@ -877,7 +899,7 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
     welcome_bonus_available?: boolean | undefined;
     bonus_category?: "casino" | "sports" | "mixed" | undefined;
     tiered_bonus?: boolean | undefined;
-    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | undefined;
+    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | "choice" | undefined;
     multi_deposit_amounts?: number[] | undefined;
     sports_bonus?: {
         type: "free_bet" | "profit_boost" | "odds_boost" | "bet_x_get_y" | "other";
@@ -918,6 +940,8 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }[] | undefined;
 }, {
@@ -961,7 +985,7 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
     welcome_bonus_available?: boolean | undefined;
     bonus_category?: "casino" | "sports" | "mixed" | undefined;
     tiered_bonus?: boolean | undefined;
-    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | undefined;
+    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | "choice" | undefined;
     multi_deposit_amounts?: number[] | undefined;
     sports_bonus?: {
         type: "free_bet" | "profit_boost" | "odds_boost" | "bet_x_get_y" | "other";
@@ -1002,6 +1026,8 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }[] | undefined;
 }>, "many">, {
@@ -1045,7 +1071,7 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
     welcome_bonus_available?: boolean | undefined;
     bonus_category?: "casino" | "sports" | "mixed" | undefined;
     tiered_bonus?: boolean | undefined;
-    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | undefined;
+    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | "choice" | undefined;
     multi_deposit_amounts?: number[] | undefined;
     sports_bonus?: {
         type: "free_bet" | "profit_boost" | "odds_boost" | "bet_x_get_y" | "other";
@@ -1086,6 +1112,8 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }[] | undefined;
 }[], {
@@ -1129,7 +1157,7 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
     welcome_bonus_available?: boolean | undefined;
     bonus_category?: "casino" | "sports" | "mixed" | undefined;
     tiered_bonus?: boolean | undefined;
-    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | undefined;
+    package_type?: "single" | "tiered" | "multi_deposit" | "additive" | "choice" | undefined;
     multi_deposit_amounts?: number[] | undefined;
     sports_bonus?: {
         type: "free_bet" | "profit_boost" | "odds_boost" | "bet_x_get_y" | "other";
@@ -1170,6 +1198,8 @@ export declare const casinosArraySchema: z.ZodEffects<z.ZodArray<z.ZodObject<{
         free_spins_wagering_requirement?: number | undefined;
         free_spins_rtp?: number | undefined;
         fixed_wagering_eur?: number | undefined;
+        max_cashout_eur?: number | null | undefined;
+        time_limit_days?: number | undefined;
         notes?: string | undefined;
     }[] | undefined;
 }[]>;
