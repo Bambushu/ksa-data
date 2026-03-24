@@ -1123,7 +1123,7 @@ export const casinos = [
             notes: "Gratis live tegoed bij eerste storting. Details op Betnation website.",
             last_verified: "2026-03-24"
         },
-        package_type: "additive",
+        package_type: "choice",
         sports_bonus: {
             type: "free_bet",
             summary: "Krijg tot €50 aan Free Bets. Stort en zet €10 in op sport, ontvang 5x €10 Free Bets.",
@@ -1550,7 +1550,7 @@ export const casinos = [
             max_bonus_eur: 200,
             free_spins: 30,
             free_spins_value_eur: 0.1,
-            wagering_requirement: 15,
+            wagering_requirement: 30,
             wagering_applies_to: "bonus",
             min_deposit_eur: 10,
             max_deposit_eur: 200,
