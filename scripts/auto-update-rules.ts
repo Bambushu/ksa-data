@@ -22,6 +22,9 @@ export function classifyMismatches(mismatches: Mismatch[]): ClassifiedMismatches
       flagged.push(m);
     } else if (NEVER_AUTO_UPDATE_FIELDS.has(m.field)) {
       flagged.push(m);
+    } else if (m.site_value === null || m.site_value === undefined) {
+      // Never auto-write null — flag for manual review
+      flagged.push(m);
     } else {
       autoUpdate.push(m);
     }
