@@ -1559,7 +1559,7 @@ export const casinos: Casino[] = [
     qualifying_wager_eur: 10,
     free_spins_wagering_requirement: 5,
     max_cashout_eur: null,
-    time_limit_days: 14,
+    time_limit_days: 30,
     game_weightings: {
     slots: 1,
     live_casino: 0,

@@ -3,111 +3,89 @@ import { promotionsArraySchema } from "./schemas.js";
 
 export const promotions: Promotion[] = [
   {
-    "id": "711-win-5-gratis-spins",
-    "casino_slug": "711",
-    "title": "Win €5 Gratis Spins",
-    "type": "free_spins",
-    "description": "Win €5 aan gratis spins op Gates Of Olympus van Pragmatic Play.",
-    "bonus_value": 5,
-    "starts": "2026-03-16",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "711-10-000-hacksaw-gaming-toernooi",
-    "casino_slug": "711",
-    "title": "€10.000 Hacksaw Gaming Toernooi",
-    "type": "tournament",
-    "description": "Maak kans op de hoofdprijs van €1.500 in het Hacksaw Gaming toernooi met een prijzenpot van €10.000.",
-    "bonus_value": 10000,
-    "starts": "2026-03-20",
-    "expires": "2026-03-26",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "711-10-000-multiplier-drops",
-    "casino_slug": "711",
-    "title": "10.000 Multiplier Drops",
+    "id": "betcity-betcity-paas-spinner",
+    "casino_slug": "betcity",
+    "title": "BetCity Paas Spinner",
     "type": "other",
-    "description": "Win 10x tot 1000x je inzet met de Multiplier Drops actie gedurende de maand maart.",
-    "starts": "2026-03-03",
-    "expires": "2026-03-31",
-    "last_verified": "2026-03-22"
+    "description": "Maak iedere dag gratis kans op prachtige prijzen met de Paas Spinner!",
+    "starts": "2026-03-24",
+    "expires": "2026-04-06",
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "711-20-stortingsbonus",
-    "casino_slug": "711",
-    "title": "20% Stortingsbonus",
+    "id": "betcity-25-free-spins-thunder-coins-xxl",
+    "casino_slug": "betcity",
+    "title": "25 Free Spins - Thunder Coins XXL",
+    "type": "free_spins",
+    "description": "Stort en pak 25 Free Spins voor Thunder Coins XXL: Multicoin!",
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-5-gift-card-dutch-roulette",
+    "casino_slug": "betcity",
+    "title": "€5 Gift Card Dutch Roulette",
     "type": "deposit_bonus",
-    "description": "Ontvang 20% stortingsbonus op een storting naar keuze gedurende de maand maart.",
-    "bonus_value": 20,
-    "starts": "2026-03-01",
-    "expires": "2026-03-31",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "betcity-weekend-toernooi",
-    "casino_slug": "betcity",
-    "title": "Weekend Toernooi",
-    "type": "tournament",
-    "description": "Maak dit weekend kans op €250 in het Casino.",
-    "bonus_value": 250,
-    "starts": "2026-03-21",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "betcity-50-free-spins",
-    "casino_slug": "betcity",
-    "title": "50 Free Spins",
-    "type": "free_spins",
-    "description": "Speel iedere week 50 Free Spins vrij in het Casino.",
-    "starts": "2026-03-16",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "betcity-5-aan-gift-cards",
-    "casino_slug": "betcity",
-    "title": "€5 aan Gift Cards",
-    "type": "other",
-    "description": "Claim elke week tot €5 aan Gift Cards in het Live Casino.",
+    "description": "Stort en claim een €5 Gift Card voor BetCity Dutch Roulette!",
     "bonus_value": 5,
-    "starts": "2026-03-16",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "betcity-betcity-spinner",
+    "id": "betcity-50-free-spins-wekelijks",
     "casino_slug": "betcity",
-    "title": "BetCity Spinner",
+    "title": "50 Free Spins Wekelijks",
+    "type": "free_spins",
+    "description": "Speel iedere week 50 Free Spins vrij in ons Casino!",
+    "starts": "2026-03-23",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-5-aan-gift-cards-live-casino",
+    "casino_slug": "betcity",
+    "title": "€5 aan Gift Cards Live Casino",
     "type": "other",
-    "description": "Maak iedere dag gratis kans op prachtige prijzen!",
-    "starts": "2026-03-22",
+    "description": "Claim elke week tot €5 aan Gift Cards in ons Live Casino!",
+    "bonus_value": 5,
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "betcity-thunder-coins-toernooi",
+    "id": "betcity-pirots-toernooi",
     "casino_slug": "betcity",
-    "title": "Thunder Coins Toernooi",
+    "title": "Pirots Toernooi",
     "type": "tournament",
-    "description": "Speel mee in het Casino en maak kans op €1.500!",
+    "description": "Speel mee in ons Casino en maak kans op €1.500!",
     "bonus_value": 1500,
-    "starts": "2026-03-22",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "betcity-roulette-toernooi",
+    "id": "betcity-gameshow-toernooi",
     "casino_slug": "betcity",
-    "title": "Roulette Toernooi",
+    "title": "Gameshow Toernooi",
     "type": "tournament",
-    "description": "Ga voor de hoofdprijs van €1.000 in het Live Casino!",
+    "description": "Ga voor de hoofdprijs van €1.000 in ons Live Casino!",
     "bonus_value": 1000,
-    "starts": "2026-03-22",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-royaal-toernooi",
+    "casino_slug": "betcity",
+    "title": "Royaal Toernooi",
+    "type": "tournament",
+    "description": "Maak kans op de hoofdprijs van €2.000 in ons Casino!",
+    "bonus_value": 2000,
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
   },
   {
     "id": "betcity-azen-zijn-bazen",
@@ -116,51 +94,166 @@ export const promotions: Promotion[] = [
     "type": "other",
     "description": "Heb je 2 azen in je hand? Dan pak je een €10 Gift Card!",
     "bonus_value": 10,
-    "starts": "2026-03-22",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "betcity-royaal-toernooi",
+    "id": "betcity-straight-ups",
     "casino_slug": "betcity",
-    "title": "Royaal Toernooi",
-    "type": "tournament",
-    "description": "Maak kans op de hoofdprijs van €2.000 in het Casino!",
-    "bonus_value": 2000,
-    "starts": "2026-03-22",
+    "title": "Straight Ups",
+    "type": "other",
+    "description": "Win extra als het balletje 5 keer op jouw getal valt bij roulette!",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-gameshow-bonus",
+    "casino_slug": "betcity",
+    "title": "Gameshow Bonus",
+    "type": "free_spins",
+    "description": "Ontdek GRATIS onze vetste Gameshows van Evolution!",
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
   },
   {
     "id": "betcity-mines-20-free-rounds",
     "casino_slug": "betcity",
     "title": "Mines: 20 Free Rounds",
     "type": "free_spins",
-    "description": "Ontvang 20 gratis speelronden voor Mines van Hacksaw.",
-    "starts": "2026-03-22",
+    "description": "Wij geven je 20 gratis speelronden voor Mines van Hacksaw!",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-wekelijkse-bonus",
+    "casino_slug": "betcity",
+    "title": "Wekelijkse Bonus",
+    "type": "other",
+    "description": "Speel iedere week bij BetCity en je krijgt wekelijks een of meerdere bonussen!",
+    "starts": "2026-03-23",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
   },
   {
     "id": "betcity-20-free-spins-nieuwsbrief",
     "casino_slug": "betcity",
     "title": "20 Free Spins Nieuwsbrief",
     "type": "free_spins",
-    "description": "Abonneer op de BetCity nieuwsbrief en krijg 20 Free Spins.",
-    "starts": "2026-03-22",
+    "description": "Abonneer op de BetCity nieuwsbrief en krijg 20 Free Spins!",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "betnation-nederlands-voetbal-live-free-bet",
-    "casino_slug": "betnation",
-    "title": "Nederlands Voetbal Live Free Bet",
+    "id": "betcity-wedstrijd-van-de-week",
+    "casino_slug": "betcity",
+    "title": "Wedstrijd van de Week",
     "type": "other",
-    "description": "Zet in op Nederlands voetbal dit weekend en ontvang een €5 Live Free Bet.",
+    "description": "Pak een €5 Free Bet voor Nederland - Noorwegen!",
     "bonus_value": 5,
-    "starts": "2026-03-21",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
+    "starts": "2026-03-23",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-5-free-bet-tennis",
+    "casino_slug": "betcity",
+    "title": "€5 Free Bet Tennis",
+    "type": "other",
+    "description": "Claim iedere week jouw €5 Free Bet voor tennis!",
+    "bonus_value": 5,
+    "starts": "2026-03-23",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-bet-get-nba",
+    "casino_slug": "betcity",
+    "title": "Bet & Get NBA",
+    "type": "other",
+    "description": "Profiteer elke week van een €5 Free Bet voor de NBA!",
+    "bonus_value": 5,
+    "starts": "2026-03-23",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-21-jackpot",
+    "casino_slug": "betcity",
+    "title": "21 Jackpot",
+    "type": "other",
+    "description": "21 Jackpot is terug: voorspel gratis en maak kans op €5.000!",
+    "bonus_value": 5000,
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-win-free-bets-jaar-gratis-wedden",
+    "casino_slug": "betcity",
+    "title": "Win Free Bets - Jaar Gratis Wedden",
+    "type": "other",
+    "description": "Speel en maak kans op een jaar lang gratis wedden!",
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-bet-get-darts",
+    "casino_slug": "betcity",
+    "title": "Bet & Get Darts",
+    "type": "other",
+    "description": "Claim elke ronde een €5 Free Bet voor de Premier League Darts!",
+    "bonus_value": 5,
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betcity-bet-get-eredivisie",
+    "casino_slug": "betcity",
+    "title": "Bet & Get Eredivisie",
+    "type": "other",
+    "description": "Profiteer iedere week van een €10 Free Bet voor de Eredivisie!",
+    "bonus_value": 10,
+    "starts": "2026-03-23",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betnation-games-global-toernooi",
+    "casino_slug": "betnation",
+    "title": "Games Global Toernooi",
+    "type": "tournament",
+    "description": "Doe mee aan het wekelijkse toernooi bij Games Global en maak kans op een deel van de prijzenpot van €1500.",
+    "bonus_value": 1500,
+    "starts": "2026-03-23",
+    "expires": "2026-03-29",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betnation-dubbele-quest-power-crown-crown-strike",
+    "casino_slug": "betnation",
+    "title": "Dubbele Quest: Power Crown & Crown Strike",
+    "type": "free_spins",
+    "description": "Claim tot maar liefst 35 gratis spins met de dubbele Quest bij Power Crown en Crown Strike.",
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betnation-dagelijkse-mystery-spins",
+    "casino_slug": "betnation",
+    "title": "Dagelijkse Mystery Spins",
+    "type": "free_spins",
+    "description": "Voltooi de dagelijkse Mystery Spins bij Betnation en ontvang tussen de 5 en 100 gratis spins per dag.",
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
   },
   {
     "id": "betnation-nieuwsbrief-gratis-spins",
@@ -168,180 +261,155 @@ export const promotions: Promotion[] = [
     "title": "Nieuwsbrief Gratis Spins",
     "type": "free_spins",
     "description": "Schrijf je in voor de nieuwsbrief en verdien maandelijks tot wel 50 gratis spins voor de leukste spellen.",
-    "starts": "2026-03-01",
-    "expires": "2026-03-31",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "betnation-gaming-corps-toernooi",
-    "casino_slug": "betnation",
-    "title": "Gaming Corps Toernooi",
-    "type": "tournament",
-    "description": "Doe mee aan het Gaming Corps toernooi en maak kans op een deel van de prijzenpot van €1.000.",
-    "bonus_value": 1000,
-    "starts": "2026-03-22",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "betnation-dagelijkse-mystery-spins",
-    "casino_slug": "betnation",
-    "title": "Dagelijkse Mystery Spins",
-    "type": "free_spins",
-    "description": "Voltooi de dagelijkse Mystery Spins en ontvang tussen de 5 en 100 gratis spins. Hoeveel je krijgt blijft een verrassing.",
-    "starts": "2026-03-22",
-    "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "betnation-drops-wins-pragmatic-play",
     "casino_slug": "betnation",
-    "title": "Drops & Wins - Pragmatic Play",
+    "title": "Drops & Wins – Pragmatic Play",
     "type": "tournament",
     "description": "Doe mee met de Drops & Wins bij geselecteerde Pragmatic Play-spellen en maak kans op dagelijkse prize drops.",
-    "starts": "2026-03-22",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "betnation-atp-miami-free-bet",
+    "casino_slug": "betnation",
+    "title": "ATP Miami Free Bet",
+    "type": "other",
+    "description": "Zet €20 in op ATP Miami en ontvang een €5 live free bet tijdens het toptennis in Florida.",
+    "bonus_value": 5,
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
   },
   {
     "id": "betnation-25-bet-builder-profit-boosts",
     "casino_slug": "betnation",
     "title": "25% Bet Builder Profit Boosts",
     "type": "deposit_bonus",
-    "description": "Pak tot maar liefst €1.000 extra met de 25% Bet Builder Profit Boosts op sportweddenschappen.",
+    "description": "Pak tot maar liefst €1.000 extra met 25% Bet Builder Profit Boosts op jouw sportweddenschappen.",
     "bonus_value": 1000,
-    "starts": "2026-03-22",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "casino777-gok-50-en-ontvang-10-gratis-spins",
-    "casino_slug": "casino777",
-    "title": "Gok €50 en ontvang 10 Gratis Spins",
-    "type": "free_spins",
-    "description": "Zet €50 in op Coin Strike XXL: hold and win en ontvang 10 Gratis Spins. Elke spin is €0,10 waard, eenmalige deelname.",
-    "bonus_value": 1,
-    "wagering_multiplier": 0,
-    "starts": "2026-03-17",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "casino777-stakelogic-gok-100-en-ontvang-25-gratis-spins",
-    "casino_slug": "casino777",
-    "title": "Stakelogic Gok €100 en ontvang 25 Gratis Spins",
-    "type": "free_spins",
-    "description": "Zet €100 in op Big Runner Deluxe of Gold Winner Jackpot en ontvang 25 Gratis Spins. Elke spin is €0,10 waard, eenmalige deelname.",
-    "bonus_value": 2.5,
-    "wagering_multiplier": 0,
-    "starts": "2026-03-18",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "casino777-gok-75-en-ontvang-15-gratis-spins",
-    "casino_slug": "casino777",
-    "title": "Gok €75 en ontvang 15 Gratis Spins",
-    "type": "free_spins",
-    "description": "Zet €75 in op Mahjong Magic, Baa Baa Baa of The Raccaroon en ontvang 15 Gratis Spins. Elke spin is €0,10 waard, dagelijkse deelname mogelijk.",
-    "bonus_value": 1.5,
-    "wagering_multiplier": 0,
-    "starts": "2026-03-19",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "casino777-weekend-special-gok-50-en-ontvang-10-gratis-spins",
     "casino_slug": "casino777",
     "title": "Weekend Special: Gok €50 en ontvang 10 Gratis Spins",
     "type": "free_spins",
-    "description": "Zet €50 in op Area Link™ Dragon en ontvang 10 Gratis Spins. Elke spin is €0,10 waard, dagelijkse deelname mogelijk.",
+    "description": "Zet €50 in op Area Link™ Dragon en ontvang 10 Gratis Spins (€0,10 per spin). Geldig van 21 t/m 24 maart.",
     "bonus_value": 1,
     "wagering_multiplier": 0,
     "starts": "2026-03-21",
     "expires": "2026-03-24",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "casino777-aanbieder-van-de-maand-pragmatic-play",
     "casino_slug": "casino777",
     "title": "Aanbieder van de Maand - Pragmatic Play",
     "type": "free_spins",
-    "description": "Zet €50 in op Sweet Rush Bonanza en ontvang 10 wekelijkse Gratis Spins. Elke spin is €0,10 waard met 0x doorspeel vereiste.",
+    "description": "Zet €50 in op Gates of Olympus Super Scatter en ontvang 10 wekelijkse Gratis Spins (€0,10 per spin, 0x doorspeel vereiste). Geldig van 2 t/m 29 maart.",
     "bonus_value": 1,
     "wagering_multiplier": 0,
     "starts": "2026-03-02",
     "expires": "2026-03-29",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "casino777-gok-50-en-ontvang-10-gratis-spins-coin-strike-xxl",
+    "casino_slug": "casino777",
+    "title": "Gok €50 en ontvang 10 Gratis Spins - Coin Strike XXL",
+    "type": "free_spins",
+    "description": "Zet €50 in op Coin Strike XXL: hold and win en ontvang 10 Gratis Spins (€0,10 per spin, 0x doorspeel vereiste). Geldig van 24 t/m 29 maart.",
+    "bonus_value": 1,
+    "wagering_multiplier": 0,
+    "starts": "2026-03-24",
+    "expires": "2026-03-29",
+    "last_verified": "2026-03-24"
   },
   {
     "id": "casino777-hacksaw-wekelijks-bet-en-get-amazing-miceketeers",
     "casino_slug": "casino777",
     "title": "Hacksaw Wekelijks Bet en Get: Amazing Miceketeers",
     "type": "free_spins",
-    "description": "Zet €100 in op Amazing Miceketeers en ontvang 25 wekelijkse Gratis Spins. Elke spin is €0,10 waard met 0x doorspeel vereiste.",
+    "description": "Zet €100 in op Amazing Miceketeers en ontvang 25 wekelijkse Gratis Spins (€0,10 per spin, 0x doorspeel vereiste). Geldig van 6 t/m 31 maart.",
     "bonus_value": 2.5,
     "wagering_multiplier": 0,
     "starts": "2026-03-06",
     "expires": "2026-03-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "casino777-rad-van-fortuin-777",
     "casino_slug": "casino777",
     "title": "Rad van Fortuin 777",
     "type": "free_spins",
-    "description": "Draai dagelijks gratis aan het rad en claim prijzen. Vereist een storting van minimaal €10 in de afgelopen 7 dagen. Gratis Spins op Red Tiger spellen met 0x doorspeel vereiste.",
+    "description": "Schrijf je in en draai dagelijks gratis aan het rad om prijzen te winnen. Gratis Spins op Red Tiger spellen met een waarde van €0,10 per spin en 0x doorspeel vereiste.",
     "wagering_multiplier": 0,
-    "starts": "2026-03-22",
+    "starts": "2026-03-24",
     "expires": "2026-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "casino777-speel-gridders-spellen-en-ontvang-gratis-spins",
     "casino_slug": "casino777",
-    "title": "Speel Gridders-spellen en ontvang gratis spins",
+    "title": "Speel Gridders-spellen en ontvang Gratis Spins",
     "type": "free_spins",
-    "description": "Zet minimaal €50 in op Gridders-spellen en ontvang dagelijks 10 gratis spins op Red Tiger spellen. Elke spin is €0,10 waard met 0x doorspeel vereiste.",
+    "description": "Zet dagelijks minimaal €50 in op Gridders-spellen en claim 10 gratis spins per dag (€0,10 per spin, 0x doorspeel vereiste). Geldig heel 2026.",
     "bonus_value": 1,
     "wagering_multiplier": 0,
     "starts": "2026-01-01",
     "expires": "2026-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "casino777-speel-live-casino-in-2026-en-ontvang-freespins",
     "casino_slug": "casino777",
-    "title": "Speel live casino in 2026 en ontvang freespins",
+    "title": "Speel Live Casino in 2026 en ontvang Freespins",
     "type": "free_spins",
-    "description": "Zet €100 in op geselecteerde live casinospellen en ontvang dagelijks 25 freespins op Red Tiger spellen. Elke spin is €0,10 waard met 0x doorspeel vereiste.",
+    "description": "Zet dagelijks minimaal €100 in op geselecteerde live casinospellen en ontvang 25 freespins per dag (€0,10 per spin, 0x doorspeel vereiste). Geldig heel 2026.",
     "bonus_value": 2.5,
     "wagering_multiplier": 0,
     "starts": "2026-01-01",
     "expires": "2026-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "circus-play-n-go-toernooi",
     "casino_slug": "circus",
-    "title": "Play'n GO toernooi 🎉💵",
+    "title": "Play'n GO toernooi",
     "type": "tournament",
     "description": "Vier het 4-jarig jubileum van Circus en pak jouw kans op een deel van €5.000, inclusief een jackpot van €1.500, van 20 t/m 26 maart.",
     "bonus_value": 5000,
     "starts": "2026-03-20",
     "expires": "2026-03-26",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "circus-verdien-een-free-bet",
+    "id": "circus-quest-60-free-spins",
     "casino_slug": "circus",
-    "title": "Verdien een free bet! ⚽",
-    "type": "other",
-    "description": "Elke week kun je een free bet van €20 verdienen bij een topwedstrijd uit de Eredivisie of andere grote Europese competitie.",
-    "bonus_value": 20,
-    "starts": "2026-03-22",
+    "title": "Quest: 60 Free Spins",
+    "type": "free_spins",
+    "description": "Voltooi de wekelijkse Quests op Gates of Circus van Pragmatic Play en pak tot 60 Free Spins.",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "circus-scoor-100-free-spins",
+    "casino_slug": "circus",
+    "title": "Scoor 100 Free Spins!",
+    "type": "free_spins",
+    "description": "Free Spin Mania is begonnen! Ontvang tot 100 Free Spins en ontdek nog meer speelplezier.",
+    "starts": "2026-03-24",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
   },
   {
     "id": "fair-play-online-drops-wins",
@@ -364,270 +432,281 @@ export const promotions: Promotion[] = [
     "last_verified": "2026-03-22"
   },
   {
-    "id": "jacks-nl-2-000-booming-games-toernooi",
+    "id": "jacks-nl-rubyplay-toernooi",
     "casino_slug": "jacks-nl",
-    "title": "€2.000 Booming Games Toernooi",
+    "title": "RubyPlay Toernooi",
     "type": "tournament",
-    "description": "Doe mee aan het Booming Games casinotoernooi met een prijzenpot van €2.000.",
-    "bonus_value": 2000,
-    "starts": "2026-03-18",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
+    "description": "Casino toernooi met een prijzenpot van €3.000 bij RubyPlay spellen.",
+    "bonus_value": 3000,
+    "starts": "2026-03-22",
+    "expires": "2026-03-26",
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "jacks-nl-wk-kwalificatie-play-offs-2-free-bets-van-5",
+    "casino_slug": "jacks-nl",
+    "title": "WK-Kwalificatie Play-Offs: 2 Free Bets van €5",
+    "type": "free_spins",
+    "description": "Scoor 2 free bets van €5 tijdens de WK-kwalificatie play-offs.",
+    "bonus_value": 10,
+    "starts": "2026-03-23",
+    "expires": "2026-03-26",
+    "last_verified": "2026-03-24"
   },
   {
     "id": "jacks-nl-pragmatic-play-prijs-drop",
     "casino_slug": "jacks-nl",
     "title": "Pragmatic Play Prijs Drop",
     "type": "tournament",
-    "description": "Maak kans op prijzen met de Pragmatic Play Prijs Drop actie in het casino.",
+    "description": "Pragmatic Play prijs drop actie met willekeurige prijzen in het casino.",
     "starts": "2026-03-04",
     "expires": "2026-04-01",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "jacks-nl-wekelijks-kans-op-100-aan-free-spins",
     "casino_slug": "jacks-nl",
-    "title": "Wekelijks kans op €100 aan Free Spins",
+    "title": "Wekelijks Kans op €100 aan Free Spins",
     "type": "free_spins",
-    "description": "Doe gratis mee en maak wekelijks kans op €100 aan free spins in het casino.",
+    "description": "Doe wekelijks gratis mee en maak kans op €100 aan free spins.",
     "bonus_value": 100,
     "starts": "2026-03-18",
     "expires": "2026-06-10",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "jacks-nl-grand-slam-wimbledon-1-000-aan-prijzengeld",
     "casino_slug": "jacks-nl",
-    "title": "Grand Slam Wimbledon: €1.000 aan prijzengeld",
+    "title": "Grand Slam Wimbledon: €1.000 aan Prijzengeld",
     "type": "tournament",
-    "description": "Sporttoernooi rondom Wimbledon met €1.000 aan prijzengeld.",
+    "description": "Win een deel van €1.000 aan prijzengeld tijdens Wimbledon.",
     "bonus_value": 1000,
     "starts": "2026-06-30",
     "expires": "2026-07-13",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-wk-voor-clubs-scoor-4x-10-free-bets",
+    "id": "jacks-nl-wk-voor-clubs-4x-10-free-bets",
     "casino_slug": "jacks-nl",
-    "title": "WK voor Clubs: Scoor 4x €10 Free Bets",
+    "title": "WK voor Clubs: 4x €10 Free Bets",
     "type": "other",
-    "description": "Scoor vier free bets van €10 tijdens het WK voor Clubs.",
+    "description": "Scoor 4 keer €10 aan free bets tijdens het WK voor clubs.",
     "bonus_value": 40,
     "starts": "2026-06-14",
     "expires": "2026-07-13",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "jacks-nl-winnaars-adventskalender",
     "casino_slug": "jacks-nl",
     "title": "Winnaars Adventskalender",
     "type": "other",
-    "description": "Casino en sport adventskalender met dagelijkse prijzen, loopt van januari tot oktober.",
+    "description": "Langlopende adventskalender-actie voor casino en sport met dagelijkse prijzen.",
     "starts": "2026-01-01",
     "expires": "2026-10-07",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "jacks-nl-nodig-vrienden-uit-en-pak-tot-300-bonus",
-    "casino_slug": "jacks-nl",
-    "title": "Nodig vrienden uit en pak tot €300 bonus",
-    "type": "other",
-    "description": "Nodig vrienden uit bij JACKS.NL en ontvang tot €300 bonus. Vernieuwde refer-a-friend actie.",
-    "bonus_value": 300,
-    "starts": "2026-03-22",
-    "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "jacks-nl-octoplay-jackspot-hunt",
     "casino_slug": "jacks-nl",
     "title": "Octoplay: Jackspot Hunt",
     "type": "tournament",
-    "description": "Speel mee met de Octoplay Jackspot Hunt casinopromoactie. Einddatum nog te bevestigen.",
+    "description": "Octoplay jackpot hunt actie in het casino.",
     "starts": "2026-02-02",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-kraker-van-eigen-bodem-claim-jouw-1-free-bet",
+    "id": "jacks-nl-kraker-van-eigen-bodem-1-free-bet",
     "casino_slug": "jacks-nl",
-    "title": "Kraker van Eigen Bodem: Claim jouw €1 Free Bet",
+    "title": "Kraker van Eigen Bodem: €1 Free Bet",
     "type": "other",
-    "description": "Wekelijkse sportpromotie waarbij je een €1 free bet kunt claimen op Nederlandse sport.",
+    "description": "Claim wekelijks jouw €1 free bet bij Nederlandse sportwedstrijden.",
     "bonus_value": 1,
-    "starts": "2026-03-22",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-premier-league-darts-pak-elke-week-een-5-free-bet",
+    "id": "jacks-nl-premier-league-darts-5-free-bet",
     "casino_slug": "jacks-nl",
-    "title": "Premier League Darts: Pak elke week een €5 Free Bet",
+    "title": "Premier League Darts: €5 Free Bet",
     "type": "other",
-    "description": "Wekelijkse free bet van €5 op de Premier League Darts.",
+    "description": "Pak elke week een €5 free bet op de Premier League Darts.",
     "bonus_value": 5,
-    "starts": "2026-03-22",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-eredivisie-kkd-scoor-wekelijks-een-25-free-bet",
+    "id": "jacks-nl-eredivisie-kkd-25-free-bet",
     "casino_slug": "jacks-nl",
-    "title": "Eredivisie & KKD: Scoor wekelijks een €25 Free Bet",
+    "title": "Eredivisie & KKD: €25 Free Bet",
     "type": "other",
-    "description": "Wekelijkse free bet van €25 op Eredivisie en Keuken Kampioen Divisie wedstrijden.",
+    "description": "Scoor wekelijks een €25 free bet op Eredivisie en Keuken Kampioen Divisie wedstrijden.",
     "bonus_value": 25,
-    "starts": "2026-03-22",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-wedstrijd-van-de-week-scoor-een-5-free-bet",
+    "id": "jacks-nl-wedstrijd-van-de-week-5-free-bet",
     "casino_slug": "jacks-nl",
-    "title": "Wedstrijd van de Week: Scoor een €5 Free Bet",
+    "title": "Wedstrijd van de Week: €5 Free Bet",
     "type": "other",
-    "description": "Wekelijkse sportpromotie met een €5 free bet op de wedstrijd van de week.",
+    "description": "Scoor wekelijks een €5 free bet op de wedstrijd van de week.",
     "bonus_value": 5,
-    "starts": "2026-03-22",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-de-jacks-nl-kantine-scoor-met-onze-assistjes",
+    "id": "jacks-nl-de-jacks-nl-kantine-assistjes",
     "casino_slug": "jacks-nl",
-    "title": "De JACKS.NL Kantine: Scoor met onze Assistjes",
+    "title": "De JACKS.NL Kantine: Assistjes",
     "type": "other",
-    "description": "Wekelijkse sportpromotie in de JACKS.NL Kantine met assistjes en extra's.",
-    "starts": "2026-03-22",
+    "description": "Wekelijkse sportpromotie waarbij je kunt scoren met assistjes.",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-premier-league-profit-boost-scoor-20-extra-winst",
+    "id": "jacks-nl-premier-league-profit-boost-20-extra-winst",
     "casino_slug": "jacks-nl",
-    "title": "Premier League Profit Boost: Scoor 20% extra winst",
+    "title": "Premier League Profit Boost: 20% Extra Winst",
     "type": "other",
-    "description": "Wekelijkse 20% profit boost op Premier League weddenschappen.",
-    "starts": "2026-03-22",
+    "description": "Scoor wekelijks 20% extra winst op Premier League weddenschappen via een profit boost.",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-nba-pak-wekelijks-een-5-free-bet",
+    "id": "jacks-nl-nba-5-free-bet",
     "casino_slug": "jacks-nl",
-    "title": "NBA: Pak wekelijks een €5 Free Bet",
+    "title": "NBA: €5 Free Bet",
     "type": "other",
-    "description": "Wekelijkse free bet van €5 op NBA basketbalwedstrijden.",
+    "description": "Pak wekelijks een €5 free bet op NBA wedstrijden.",
     "bonus_value": 5,
-    "starts": "2026-03-22",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-formule-1-pak-elke-raceweek-een-10-free-bet",
+    "id": "jacks-nl-formule-1-10-free-bet",
     "casino_slug": "jacks-nl",
-    "title": "Formule 1: Pak elke raceweek een €10 Free Bet",
+    "title": "Formule 1: €10 Free Bet",
     "type": "other",
-    "description": "Elke raceweek een gratis €10 free bet op Formule 1 weddenschappen.",
+    "description": "Pak elke raceweek een €10 free bet op Formule 1.",
     "bonus_value": 10,
-    "starts": "2026-03-22",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-quiz-doe-je-voorspelling-en-win-tot-25-000",
+    "id": "jacks-nl-quiz-win-tot-25-000",
     "casino_slug": "jacks-nl",
-    "title": "Quiz: Doe je voorspelling en win tot €25.000",
+    "title": "Quiz: Win tot €25.000",
     "type": "other",
-    "description": "Dagelijkse quiz waarbij je voorspellingen doet en kans maakt op prijzen tot €25.000.",
+    "description": "Doe dagelijks je voorspelling en win tot €25.000 in de JACKS.NL quiz.",
     "bonus_value": 25000,
-    "starts": "2026-03-22",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "jacks-nl-jack-s-challenges-ga-de-uitdaging-aan",
+    "id": "jacks-nl-nodig-vrienden-uit-tot-300-bonus",
     "casino_slug": "jacks-nl",
-    "title": "Jack's Challenges: Ga de uitdaging aan",
-    "type": "other",
-    "description": "Wekelijkse sportuitdagingen bij JACKS.NL met bonusbeloningen.",
-    "starts": "2026-03-22",
+    "title": "Nodig Vrienden Uit: Tot €300 Bonus",
+    "type": "deposit_bonus",
+    "description": "Nodig vrienden uit en ontvang tot €300 bonus bij JACKS.NL.",
+    "bonus_value": 300,
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
+  },
+  {
+    "id": "jacks-nl-jack-s-challenges",
+    "casino_slug": "jacks-nl",
+    "title": "Jack's Challenges",
+    "type": "other",
+    "description": "Wekelijkse sportuitdagingen waarbij je prijzen kunt winnen.",
+    "starts": "2026-03-23",
+    "expires": "2099-12-31",
+    "last_verified": "2026-03-24"
   },
   {
     "id": "leovegas-free-spin-festival",
     "casino_slug": "leovegas",
     "title": "Free Spin Festival",
     "type": "free_spins",
-    "description": "Pak elke maand 85 Free Spins op Henry the Ape. Een jaar lang in totaal ruim 1000 Free Spins.",
+    "description": "Pak een jaar lang elke maand 85 Free Spins op Henry the Ape, in totaal ruim 1000 Free Spins.",
     "bonus_value": 85,
     "starts": "2026-03-01",
     "expires": "2026-03-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "leovegas-leojackpot",
     "casino_slug": "leovegas",
     "title": "LeoJackpot",
     "type": "other",
-    "description": "De LeoJackpot blijft maar oplopen met vier progressieve jackpots voor nog meer kans op winst.",
-    "starts": "2026-03-22",
+    "description": "Vier progressieve jackpots die blijven oplopen. Hoe meer je speelt, hoe groter de kans op de jackpot.",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "leovegas-leovegas-haaienpakket",
     "casino_slug": "leovegas",
     "title": "LeoVegas Haaienpakket",
     "type": "free_spins",
-    "description": "Kies elke donderdag jouw Haaienpakket in het casino en speel gratis op vintastische slots.",
+    "description": "Kies elke donderdag jouw Haaienpakket en speel gratis op vintastische slots in het casino.",
     "starts": "2026-03-26",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "leovegas-leo-s-golden-gates-pakket",
     "casino_slug": "leovegas",
     "title": "Leo's Golden Gates Pakket",
     "type": "free_spins",
-    "description": "Pak elke dinsdag tot wel 120 Free Spins voor Gates of LeoVegas 1000 met de Golden Gates pakketten.",
+    "description": "Pak elke dinsdag tot wel 120 Free Spins voor Gates of LeoVegas 1000.",
     "bonus_value": 120,
     "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "leovegas-live-casino-classics",
     "casino_slug": "leovegas",
     "title": "Live Casino Classics",
-    "type": "other",
+    "type": "cashback",
     "description": "Stap terug in de tijd met Live Casino Classics en pak elke week tot wel €35 aan gratis Reward Games.",
     "bonus_value": 35,
-    "starts": "2026-03-22",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "leovegas-acca-profit-boost",
     "casino_slug": "leovegas",
     "title": "Acca Profit Boost",
-    "type": "other",
+    "type": "deposit_bonus",
     "description": "Verhoog je winsten met een Profit Boost! Combineer weddenschappen en scoor tot wel 50% extra, elke week.",
-    "starts": "2026-03-22",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "leovegas-wekelijkse-10-free-bet",
     "casino_slug": "leovegas",
     "title": "Wekelijkse €10 Free Bet",
     "type": "other",
-    "description": "Pak wekelijks een Free Bet met LeoVegas Extra! Plaats een voetbal Acca én Bet Builder en scoor een €10 Live Free Bet.",
+    "description": "Plaats een voetbal Acca én Bet Builder en scoor wekelijks een €10 Live Free Bet via LeoVegas Extra.",
     "bonus_value": 10,
-    "starts": "2026-03-22",
+    "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "leovegas-100-profit-boost",
@@ -636,219 +715,82 @@ export const promotions: Promotion[] = [
     "type": "deposit_bonus",
     "description": "Boost je Bet Builder weddenschappen en pak wekelijks een 100% Profit Boost tot €1000.",
     "bonus_value": 1000,
-    "starts": "2026-03-22",
-    "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-toto-score-6-speel-gratis-mee-en-win-tot-25-000",
-    "casino_slug": "toto",
-    "title": "TOTO Score 6: Speel gratis mee en win tot €25.000!",
-    "type": "other",
-    "description": "Voorspel 6 wedstrijden en pak je prijs! Gratis meedoen met kans op €25.000.",
-    "bonus_value": 25000,
-    "starts": "2026-03-22",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-speel-ice-fishing-en-maak-kans-op-een-deel-van-10-000",
-    "casino_slug": "toto",
-    "title": "Speel Ice Fishing en maak kans op een deel van €10.000",
-    "type": "tournament",
-    "description": "Neem deel aan alle 3 de bonusspellen en win een mooie geldprijs uit een prijzenpot van €10.000.",
-    "bonus_value": 10000,
-    "starts": "2026-03-22",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-win-kaarten-voor-nederland-noorwegen",
-    "casino_slug": "toto",
-    "title": "Win kaarten voor Nederland - Noorwegen",
-    "type": "other",
-    "description": "Claim deze actie en maak kans op kaarten voor Nederland - Noorwegen in de Johan Cruijff Arena.",
-    "starts": "2026-03-22",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-win-kaarten-voor-nederland-ecuador",
-    "casino_slug": "toto",
-    "title": "Win kaarten voor Nederland - Ecuador",
-    "type": "other",
-    "description": "Claim deze actie en maak kans op kaarten voor Nederland - Ecuador in het Philips Stadion.",
-    "starts": "2026-03-22",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-winnitt-weekly-speel-10-op-bingo-en-krijg-10-gratis-spins-voor-slingo-lucky-mcgold",
-    "casino_slug": "toto",
-    "title": "Winnitt Weekly! Speel €10 op Bingo en krijg 10 Gratis Spins voor Slingo Lucky McGold",
-    "type": "free_spins",
-    "description": "Speel €10 op Bingo en ontvang 10 Gratis Spins voor Slingo Lucky McGold. Wekelijks terugkerende actie.",
-    "starts": "2026-03-22",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-lucky-number-7-bij-toto-lightning-roulette",
-    "casino_slug": "toto",
-    "title": "Lucky Number 7 bij TOTO Lightning Roulette",
-    "type": "tournament",
-    "description": "Speel TOTO Lightning Roulette en maak kans op een deel van €10.000.",
-    "bonus_value": 10000,
-    "starts": "2026-03-22",
-    "expires": "2026-03-22",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-toto-maandag",
-    "casino_slug": "toto",
-    "title": "TOTO Maandag!",
-    "type": "free_spins",
-    "description": "Ontvang 5 Gratis Spins en maak kans op Cash of Extra Spins. Elke maandag beschikbaar.",
     "starts": "2026-03-23",
-    "expires": "2026-03-23",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-game-show-specials",
-    "casino_slug": "toto",
-    "title": "Game Show Specials",
-    "type": "tournament",
-    "description": "Elke week een nieuwe actie! Speel mee en maak kans op een deel van €10.000.",
-    "bonus_value": 10000,
-    "starts": "2026-03-22",
-    "expires": "2026-03-28",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-toto-toernooien-kans-op-cash-of-gratis-spins",
-    "casino_slug": "toto",
-    "title": "TOTO toernooien: kans op cash of Gratis Spins",
-    "type": "tournament",
-    "description": "Maak elke week en elke weekend kans op cash of Gratis Spins met een toernooi in het TOTO Casino.",
-    "starts": "2026-03-22",
-    "expires": "2026-03-28",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-toto-lucky-777",
-    "casino_slug": "toto",
-    "title": "TOTO Lucky 777",
-    "type": "other",
-    "description": "Maak kans op €100 Gratis Chips aan de Live TOTO Blackjack tafels.",
-    "bonus_value": 100,
-    "starts": "2026-03-22",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-koning-toto-bij-blackjack",
-    "casino_slug": "toto",
-    "title": "Koning TOTO bij Blackjack!",
-    "type": "other",
-    "description": "Maak kans op €100 extra cash aan de Live Blackjack tafels.",
-    "bonus_value": 100,
-    "starts": "2026-03-22",
-    "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "toto-drops-wins-van-pragmatic-play",
-    "casino_slug": "toto",
-    "title": "Drops & Wins van Pragmatic Play!",
-    "type": "tournament",
-    "description": "Maak elke dag kans op extra prijzen op Pragmatic Play slotmachines.",
-    "starts": "2026-03-22",
-    "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "unibet-50-000-pot-o-prizes",
     "casino_slug": "unibet",
     "title": "€50.000 Pot O Prizes",
     "type": "tournament",
-    "description": "Gooi je hengel uit en maak kans op een deel van €50.000! In-game aanmelden vereist, min. spin inzet €0,10.",
+    "description": "Gooi je hengel uit en maak kans op een deel van €50.000. In-game aanmelden vereist, min. spin inzet €0,10.",
     "bonus_value": 50000,
     "starts": "2026-03-02",
     "expires": "2026-03-29",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "unibet-casino-toernooi-festival",
     "casino_slug": "unibet",
     "title": "Casino Toernooi Festival",
     "type": "tournament",
-    "description": "Een aaneenschakeling van toernooien met slots en live tafels, met telkens een prijzenpot van €5.000 cash. Inschrijven vereist, min. spin inzet €0,10.",
+    "description": "Een aaneenschakeling van toernooien met slots en live tafels, met telkens een prijzenpot van €5.000 cash. Min. spin inzet €0,10.",
     "bonus_value": 5000,
     "starts": "2026-02-02",
     "expires": "2026-03-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "unibet-wekelijkse-grind-missie",
     "casino_slug": "unibet",
     "title": "Wekelijkse Grind Missie",
     "type": "tournament",
-    "description": "Voltooi elke week een missie om je ticket te verdienen voor het Weekly Grind Special Toernooi. Inschrijven vereist.",
+    "description": "Voltooi elke week een missie om je ticket te verdienen voor het Weekly Grind Special Toernooi.",
     "starts": "2026-02-09",
     "expires": "2026-04-05",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "unibet-stellar-sundays",
+    "id": "unibet-takeoff-tuesday",
     "casino_slug": "unibet",
-    "title": "Stellar Sundays",
+    "title": "Takeoff Tuesday",
     "type": "tournament",
-    "description": "Elke zondag het poker programma van je dromen. Strijd tegen steeds sterkere spelers aan de pokertafels. Min. buy-in €1.",
-    "starts": "2026-03-22",
+    "description": "Elke dinsdag van 12:00 tot middernacht valt elk uur een x125 jackpot gegarandeerd op HexaPro Extreme. Buy-in vanaf €1 en €2.",
+    "starts": "2026-03-24",
     "expires": "2026-12-31",
-    "last_verified": "2026-03-22"
-  },
-  {
-    "id": "unibet-5-miljoen-playtech-prize-drop",
-    "casino_slug": "unibet",
-    "title": "€5 miljoen Playtech Prize Drop",
-    "type": "tournament",
-    "description": "Lucky Rush is live met €5.000.000 aan cashprijzen. Speel mee op geselecteerde Playtech-slots, verzamel punten en maak kans op hoofdprijzen tot €200.000.",
-    "bonus_value": 5000000,
-    "starts": "2026-03-06",
-    "expires": "2027-01-14",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "unibet-5-000-aan-prijzen-elk-weekend",
     "casino_slug": "unibet",
     "title": "€5.000 aan prijzen, ELK WEEKEND!",
     "type": "tournament",
-    "description": "Neem elk weekend plaats aan Pragmatic Play LIVE tafels, speel vanaf €1 al mee. Elke inzet kan een willekeurige cashprijs opleveren. Loopt van vrijdag t/m zondag.",
+    "description": "Neem elk weekend plaats aan Pragmatic Play LIVE tafels en maak kans op willekeurige cash prijzen. Min. inzet €1.",
     "bonus_value": 5000,
     "starts": "2026-03-27",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
     "id": "unibet-combo-booster",
     "casino_slug": "unibet",
-    "title": "COMBO BOOSTER",
+    "title": "Combo Booster",
     "type": "deposit_bonus",
-    "description": "Tot 50% extra CASH op je combinatieweddenschap. Hoe groter je combinaties (tot 20 selecties), hoe meer we ze boosten met 4% tot 50%. Onbeperkt aanbod op alle sporten.",
-    "starts": "2026-03-22",
+    "description": "Tot 50% extra cash op je combinatieweddenschap. Hoe meer selecties (tot 20), hoe hoger de boost van 4% tot 50%. Geldig op alle sporten.",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   },
   {
-    "id": "unibet-uniboosts",
+    "id": "unibet-de-penny-bingo-room",
     "casino_slug": "unibet",
-    "title": "Uniboosts",
+    "title": "De Penny Bingo Room",
     "type": "other",
-    "description": "Verhoog je odds tijdelijk op geselecteerde (voetbal)weddenschappen. Alleen zichtbaar als je bent ingelogd.",
-    "starts": "2026-03-22",
+    "description": "Betaalbaar bingo-plezier met kaartjes vanaf €0,01. Max. 25 kaartjes per speler per dag, dagelijks van 09:05 tot 00:00 CET.",
+    "starts": "2026-03-24",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-22"
+    "last_verified": "2026-03-24"
   }
 ];
 
