@@ -42,6 +42,25 @@ function parseArgs(): Flags {
   return flags;
 }
 
+// ── VPN check ──────────────────────────────────────────────────────
+
+async function checkVPN(): Promise<void> {
+  const testUrl = "https://www.toto.nl"; // geo-restricted to NL
+  try {
+    const res = await fetch(testUrl, {
+      method: "HEAD",
+      signal: AbortSignal.timeout(10_000),
+    });
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status}`);
+    }
+  } catch (err) {
+    console.error(`\n[vpn-check] Cannot reach ${testUrl} — is your VPN on?`);
+    console.error(`  Dutch casino sites require a NL IP address.`);
+    process.exit(1);
+  }
+}
+
 // ── Main ────────────────────────────────────────────────────────────
 
 async function main() {
@@ -51,6 +70,11 @@ async function main() {
 
   console.log(`\n[daily-verify] ${today}${flags.dryRun ? " (DRY RUN)" : ""}`);
   if (flags.casino) console.log(`  Filtering: ${flags.casino}`);
+
+  // ── 0. VPN check ────────────────────────────────────────────────
+
+  await checkVPN();
+  console.log("[vpn-check] NL access confirmed ✓");
 
   // ── 1. Bonus verification ──────────────────────────────────────
 
