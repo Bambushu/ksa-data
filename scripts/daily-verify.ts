@@ -112,6 +112,21 @@ async function main() {
     `\n[classify] Auto-update: ${classified.autoUpdate.length}  Flagged: ${classified.flagged.length}  Skipped: ${classified.skipped.length}`,
   );
 
+  // ── 3b. Report unreachable casinos ────────────────────────────
+
+  const unreachable = bonusResult.report.results.filter(
+    (r) => r.status === "error",
+  );
+
+  if (unreachable.length > 0) {
+    console.log(
+      `\n[unreachable] ${unreachable.length} casino(s) need manual review (computer-use):`,
+    );
+    for (const u of unreachable) {
+      console.log(`  - ${u.casino_name} (${u.reason ?? "unknown error"})`);
+    }
+  }
+
   // ── 4. Apply auto-updates ─────────────────────────────────────
 
   let appliedUpdates: string[] = [];
@@ -132,7 +147,7 @@ async function main() {
 
   if (!hasDataChanges) {
     console.log("\n[daily-verify] No changes detected.");
-    writeResults(today, flags, summary, promoResult, appliedUpdates, classified, newVersion);
+    writeResults(today, flags, summary, promoResult, appliedUpdates, classified, unreachable, newVersion);
     return;
   }
 
@@ -146,7 +161,7 @@ async function main() {
     if (promoResult.added > 0 || promoResult.removed > 0) {
       console.log(`  Would sync promos: +${promoResult.added} / -${promoResult.removed}`);
     }
-    writeResults(today, flags, summary, promoResult, appliedUpdates, classified, newVersion);
+    writeResults(today, flags, summary, promoResult, appliedUpdates, classified, unreachable, newVersion);
     return;
   }
 
@@ -206,7 +221,7 @@ async function main() {
 
   // ── 9. Write results ──────────────────────────────────────────
 
-  writeResults(today, flags, summary, promoResult, appliedUpdates, classified, newVersion);
+  writeResults(today, flags, summary, promoResult, appliedUpdates, classified, unreachable, newVersion);
 
   console.log(`\n[daily-verify] Done. Version ${newVersion} published.`);
 }
@@ -220,6 +235,7 @@ function writeResults(
   promoResult: PromoVerifyResult,
   appliedUpdates: string[],
   classified: ClassifiedMismatches,
+  unreachable: Array<{ casino_id: string; casino_name: string; status: string; reason?: string }>,
   newVersion: string | null,
 ) {
   fs.mkdirSync("results", { recursive: true });
@@ -242,6 +258,11 @@ function writeResults(
       unchanged: promoResult.unchanged,
       errors: promoResult.report.summary.casinos_errored,
     },
+    unreachable: unreachable.map((u) => ({
+      casino_id: u.casino_id,
+      casino_name: u.casino_name,
+      reason: u.reason,
+    })),
     published_version: newVersion,
     bonuswijs_deployed: !flags.dryRun && newVersion !== null,
     flagged_details: classified.flagged,
