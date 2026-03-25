@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-21",
+  "date": "2026-03-24",
   "results": [
     {
       "casino_id": "holland-casino-online",
@@ -10,53 +10,18 @@
     {
       "casino_id": "unibet",
       "casino_name": "Unibet",
-      "status": "mismatch",
-      "mismatches": [
-        {
-          "casino_id": "unibet",
-          "casino_name": "Unibet",
-          "terms_url": "https://www.unibet.nl/promotions/welcome-to-casino",
-          "field": "max_bonus_eur",
-          "our_value": 0,
-          "site_value": 50,
-          "priority": "high",
-          "confidence": 0.95
-        },
-        {
-          "casino_id": "unibet",
-          "casino_name": "Unibet",
-          "terms_url": "https://www.unibet.nl/promotions/welcome-to-casino",
-          "field": "wagering_requirement",
-          "our_value": 1,
-          "site_value": 0,
-          "priority": "high",
-          "confidence": 0.9
-        },
-        {
-          "casino_id": "unibet",
-          "casino_name": "Unibet",
-          "terms_url": "https://www.unibet.nl/promotions/welcome-to-casino",
-          "field": "wagering_applies_to",
-          "our_value": "bonus",
-          "site_value": null,
-          "priority": "high",
-          "confidence": 0.85
-        },
-        {
-          "casino_id": "unibet",
-          "casino_name": "Unibet",
-          "terms_url": "https://www.unibet.nl/promotions/welcome-to-casino",
-          "field": "free_spins",
-          "our_value": 100,
-          "site_value": 125,
-          "priority": "medium",
-          "confidence": 0.85
-        }
-      ]
+      "status": "confirmed",
+      "mismatches": []
     },
     {
       "casino_id": "betcity",
       "casino_name": "BetCity",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "bet365",
+      "casino_name": "bet365",
       "status": "confirmed",
       "mismatches": []
     },
@@ -69,31 +34,11 @@
           "casino_id": "betmgm",
           "casino_name": "BetMGM",
           "terms_url": "https://www.betmgm.nl/promoties/voorwaarden",
-          "field": "match_percentage",
-          "our_value": 0,
-          "site_value": null,
-          "priority": "high",
-          "confidence": 0.9
-        },
-        {
-          "casino_id": "betmgm",
-          "casino_name": "BetMGM",
-          "terms_url": "https://www.betmgm.nl/promoties/voorwaarden",
           "field": "max_bonus_eur",
           "our_value": 0,
-          "site_value": null,
+          "site_value": 25,
           "priority": "high",
-          "confidence": 0.8
-        },
-        {
-          "casino_id": "betmgm",
-          "casino_name": "BetMGM",
-          "terms_url": "https://www.betmgm.nl/promoties/voorwaarden",
-          "field": "wagering_requirement",
-          "our_value": 0,
-          "site_value": null,
-          "priority": "high",
-          "confidence": 0.95
+          "confidence": 0.75
         },
         {
           "casino_id": "betmgm",
@@ -103,9 +48,22 @@
           "our_value": "bonus",
           "site_value": null,
           "priority": "high",
-          "confidence": 0.95
+          "confidence": 0.9
         }
       ]
+    },
+    {
+      "casino_id": "goldrun-casino",
+      "casino_name": "Goldrun Casino",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "starcasino",
+      "casino_name": "Starcasino",
+      "status": "error",
+      "mismatches": [],
+      "reason": "Playwright: page content too short"
     },
     {
       "casino_id": "casino777",
@@ -118,6 +76,33 @@
       "casino_name": "Vbet",
       "status": "confirmed",
       "mismatches": []
+    },
+    {
+      "casino_id": "circus",
+      "casino_name": "Circus.nl",
+      "status": "mismatch",
+      "mismatches": [
+        {
+          "casino_id": "circus",
+          "casino_name": "Circus.nl",
+          "terms_url": "https://www.circus.nl/nl/welkomstbonus",
+          "field": "bonus_type",
+          "our_value": "deposit_match",
+          "site_value": "combined",
+          "priority": "high",
+          "confidence": 0.7
+        },
+        {
+          "casino_id": "circus",
+          "casino_name": "Circus.nl",
+          "terms_url": "https://www.circus.nl/nl/welkomstbonus",
+          "field": "free_spins",
+          "our_value": 0,
+          "site_value": 100,
+          "priority": "medium",
+          "confidence": 0.85
+        }
+      ]
     },
     {
       "casino_id": "888",
@@ -140,8 +125,9 @@
     {
       "casino_id": "fair-play-online",
       "casino_name": "Fair Play Online",
-      "status": "confirmed",
-      "mismatches": []
+      "status": "error",
+      "mismatches": [],
+      "reason": "Playwright failed: TimeoutError: page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.fairplaycasino.nl/promoties/welkomstbonus\", waiting until \"load\"\u001b[22m\n"
     },
     {
       "casino_id": "leovegas",
@@ -168,7 +154,7 @@
           "our_value": "deposit_match",
           "site_value": "combined",
           "priority": "high",
-          "confidence": 0.8
+          "confidence": 0.85
         },
         {
           "casino_id": "betnation",
@@ -178,7 +164,7 @@
           "our_value": 0,
           "site_value": 100,
           "priority": "medium",
-          "confidence": 0.85
+          "confidence": 0.9
         }
       ]
     },
@@ -191,25 +177,43 @@
     {
       "casino_id": "jacks-nl",
       "casino_name": "Jacks.nl",
-      "status": "mismatch",
-      "mismatches": [
-        {
-          "casino_id": "jacks-nl",
-          "casino_name": "Jacks.nl",
-          "terms_url": "https://www.jacks.nl/promoties",
-          "field": "bonus_type",
-          "our_value": "deposit_match",
-          "site_value": "combined",
-          "priority": "high",
-          "confidence": 0.85
-        }
-      ]
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "one-casino",
+      "casino_name": "One Casino",
+      "status": "confirmed",
+      "mismatches": []
+    },
+    {
+      "casino_id": "711",
+      "casino_name": "711",
+      "status": "confirmed",
+      "mismatches": []
     },
     {
       "casino_id": "getlucky",
       "casino_name": "GetLucky",
       "status": "confirmed",
       "mismatches": []
+    },
+    {
+      "casino_id": "winz",
+      "casino_name": "Winz",
+      "status": "mismatch",
+      "mismatches": [
+        {
+          "casino_id": "winz",
+          "casino_name": "Winz",
+          "terms_url": "https://www.winz.nl/over-ons/bonus-voorwaarden",
+          "field": "wagering_requirement",
+          "our_value": 15,
+          "site_value": 30,
+          "priority": "high",
+          "confidence": 0.8
+        }
+      ]
     },
     {
       "casino_id": "bingoal",
@@ -230,39 +234,11 @@
       "mismatches": []
     },
     {
-      "casino_id": "bet365",
-      "casino_name": "bet365",
-      "status": "skipped",
-      "mismatches": [],
-      "reason": "no terms_url"
-    },
-    {
       "casino_id": "tonybet",
       "casino_name": "Tonybet",
       "status": "skipped",
       "mismatches": [],
       "reason": "welcome_bonus_available is false"
-    },
-    {
-      "casino_id": "goldrun-casino",
-      "casino_name": "Goldrun Casino",
-      "status": "skipped",
-      "mismatches": [],
-      "reason": "no terms_url"
-    },
-    {
-      "casino_id": "starcasino",
-      "casino_name": "Starcasino",
-      "status": "skipped",
-      "mismatches": [],
-      "reason": "no terms_url"
-    },
-    {
-      "casino_id": "circus",
-      "casino_name": "Circus.nl",
-      "status": "skipped",
-      "mismatches": [],
-      "reason": "no terms_url"
     },
     {
       "casino_id": "winnitt",
@@ -279,27 +255,6 @@
       "reason": "welcome_bonus_available is false"
     },
     {
-      "casino_id": "one-casino",
-      "casino_name": "One Casino",
-      "status": "skipped",
-      "mismatches": [],
-      "reason": "no terms_url"
-    },
-    {
-      "casino_id": "711",
-      "casino_name": "711",
-      "status": "skipped",
-      "mismatches": [],
-      "reason": "no terms_url"
-    },
-    {
-      "casino_id": "winz",
-      "casino_name": "Winz",
-      "status": "skipped",
-      "mismatches": [],
-      "reason": "no terms_url"
-    },
-    {
       "casino_id": "zebet",
       "casino_name": "ZEbet",
       "status": "skipped",
@@ -308,10 +263,10 @@
     }
   ],
   "summary": {
-    "checked": 19,
-    "confirmed": 15,
+    "checked": 26,
+    "confirmed": 20,
     "mismatched": 4,
-    "skipped": 11,
-    "errors": 0
+    "skipped": 4,
+    "errors": 2
   }
 }

@@ -1,7 +1,7 @@
 {
-  "888": {
-    "content_hash": "312539c52e3c91f646c013c4759550fd38afb9fde0372fe74b9722a72906f747",
-    "extracted_at": "2026-03-21T01:24:19.360Z",
+  "711": {
+    "content_hash": "5145a91e65d4a30877f45bfe89bc0382b97db58661a8fe46b408a04c69ec2169",
+    "extracted_at": "2026-03-24T18:11:16.798Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -45,9 +45,55 @@
       }
     }
   },
+  "888": {
+    "content_hash": "21fb3a983de0744610f6ab528c7d223f66f6a88b7a7bdae5c3ac4fea0e940414",
+    "extracted_at": "2026-03-24T21:31:20.328Z",
+    "extraction": {
+      "bonus_available": {
+        "value": true,
+        "confidence": 0.2
+      },
+      "match_percentage": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_bonus_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_requirement": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_applies_to": {
+        "value": null,
+        "confidence": 0
+      },
+      "bonus_type": {
+        "value": null,
+        "confidence": 0
+      },
+      "free_spins": {
+        "value": null,
+        "confidence": 0
+      },
+      "min_deposit_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "time_limit_days": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_cashout_eur": {
+        "value": null,
+        "confidence": 0
+      }
+    }
+  },
   "holland-casino-online": {
-    "content_hash": "33e639891e62d6bf86d300c3766c87cf6e3b3260b9678c9fea204671a9053b5d",
-    "extracted_at": "2026-03-21T01:22:23.901Z",
+    "content_hash": "0cddb6d09b380449b8bc3030095a5311904fa0b6a559b9440fe8f3ff6d6360b9",
+    "extracted_at": "2026-03-24T18:05:18.872Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -92,8 +138,8 @@
     }
   },
   "unibet": {
-    "content_hash": "80bc9286f97a9410aea0b30017a9950ad017286646892a4243fb1ef850404991",
-    "extracted_at": "2026-03-21T01:22:50.070Z",
+    "content_hash": "b2fe1f16e2b147c79430a0e77f7e01d40ac1af6700b506913d35d99bb29b96fd",
+    "extracted_at": "2026-03-24T21:43:46.356Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -113,7 +159,7 @@
       },
       "wagering_applies_to": {
         "value": null,
-        "confidence": 0.85
+        "confidence": 0
       },
       "bonus_type": {
         "value": "free_spins",
@@ -125,7 +171,7 @@
       },
       "min_deposit_eur": {
         "value": 25,
-        "confidence": 0.97
+        "confidence": 0.95
       },
       "time_limit_days": {
         "value": 30,
@@ -138,8 +184,8 @@
     }
   },
   "betcity": {
-    "content_hash": "a2cb520a22711d83a85de5e48715a73aea75e936d48d78e7aa6dfb7d6ccc2175",
-    "extracted_at": "2026-03-21T01:22:58.574Z",
+    "content_hash": "2d75de2c56cbb84dbfb109af20b0dcb40956866d52b788868b5be03d6dad5413",
+    "extracted_at": "2026-03-24T18:05:56.405Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -184,8 +230,8 @@
     }
   },
   "betmgm": {
-    "content_hash": "825906308797367bae54a2f67a6ef53d9eac87b9c199f8f1eed50adf4a2f17f3",
-    "extracted_at": "2026-03-21T01:23:28.242Z",
+    "content_hash": "27b8f25a3164a8d61a076bf999c4da657c0f2434b24ed0c206d76fff227b9879",
+    "extracted_at": "2026-03-24T21:29:38.263Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -193,19 +239,19 @@
       },
       "match_percentage": {
         "value": null,
-        "confidence": 0.9
+        "confidence": 0
       },
       "max_bonus_eur": {
-        "value": null,
-        "confidence": 0.8
+        "value": 25,
+        "confidence": 0.75
       },
       "wagering_requirement": {
-        "value": null,
+        "value": 0,
         "confidence": 0.95
       },
       "wagering_applies_to": {
         "value": null,
-        "confidence": 0.95
+        "confidence": 0.9
       },
       "bonus_type": {
         "value": "free_spins",
@@ -225,17 +271,17 @@
       },
       "max_cashout_eur": {
         "value": null,
-        "confidence": 0.7
+        "confidence": 0
       }
     }
   },
   "casino777": {
-    "content_hash": "e12b980355f87c40f11efb29b529f5cdab8d4a29a7cb7c2f30a8e867b0b4e012",
-    "extracted_at": "2026-03-21T01:23:41.421Z",
+    "content_hash": "bb1d5019a7945ab678faf684716fa11d06b8fc974117239811e1dd1ee5c64c23",
+    "extracted_at": "2026-03-24T21:44:46.983Z",
     "extraction": {
       "bonus_available": {
         "value": true,
-        "confidence": 0.9
+        "confidence": 0.85
       },
       "match_percentage": {
         "value": null,
@@ -276,12 +322,12 @@
     }
   },
   "vbet": {
-    "content_hash": "2ceff39e596ff8e1928476a0154a3cbfe160081643fe2dfe2ae4d2a04cc36213",
-    "extracted_at": "2026-03-21T01:24:09.974Z",
+    "content_hash": "ffd41402914e93d3540091720f299e18444e8152499cc2d61bcabcc0c58ad9fb",
+    "extracted_at": "2026-03-24T21:45:03.643Z",
     "extraction": {
       "bonus_available": {
         "value": true,
-        "confidence": 0.8
+        "confidence": 0.7
       },
       "match_percentage": {
         "value": null,
@@ -322,8 +368,8 @@
     }
   },
   "hard-rock-casino": {
-    "content_hash": "29a4493eb70f70a46992c8cc280220097e7416f5f4724ebf202e29ebeb5e655b",
-    "extracted_at": "2026-03-21T01:24:34.573Z",
+    "content_hash": "3029ce44eff3dbd6e99a998a4f4a786ee2284ed0dd164e65cc6a0cd81582d42a",
+    "extracted_at": "2026-03-24T18:08:39.653Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -368,8 +414,8 @@
     }
   },
   "comeon": {
-    "content_hash": "b059b60c1db23ea61be2437064fcbedee65319fcacceaff7311ad601d815980a",
-    "extracted_at": "2026-03-21T01:24:44.052Z",
+    "content_hash": "01d046dfecc544650492729a6b911b312ea2a210502245adcea05b250fe8d7be",
+    "extracted_at": "2026-03-24T18:08:49.893Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -460,8 +506,8 @@
     }
   },
   "leovegas": {
-    "content_hash": "9346ebecba3a0d71fc5ad5eeaf2e0f5129665a44d2ea38fdff174259f805d31c",
-    "extracted_at": "2026-03-21T01:25:08.251Z",
+    "content_hash": "c4e729d08524e44d2316476045d182de15a47d151e346a800e5b8d9f21f31a93",
+    "extracted_at": "2026-03-24T21:46:41.127Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -469,11 +515,11 @@
       },
       "match_percentage": {
         "value": null,
-        "confidence": 0.2
+        "confidence": 0
       },
       "max_bonus_eur": {
         "value": 200,
-        "confidence": 0.9
+        "confidence": 0.85
       },
       "wagering_requirement": {
         "value": null,
@@ -489,7 +535,7 @@
       },
       "free_spins": {
         "value": 400,
-        "confidence": 0.85
+        "confidence": 0.8
       },
       "min_deposit_eur": {
         "value": null,
@@ -506,12 +552,12 @@
     }
   },
   "kansino": {
-    "content_hash": "c31e53ab80d73ddde763b54533f86b16e2ab468dba5626f242c2cfbaa543748f",
-    "extracted_at": "2026-03-21T01:25:16.804Z",
+    "content_hash": "0ab3a6acd626dec8fa9551322af8f80024743ceceb9f152a8cd92035b5313164",
+    "extracted_at": "2026-03-24T21:46:57.133Z",
     "extraction": {
       "bonus_available": {
         "value": true,
-        "confidence": 0.3
+        "confidence": 0.5
       },
       "match_percentage": {
         "value": null,
@@ -552,20 +598,20 @@
     }
   },
   "betnation": {
-    "content_hash": "e5055c82a46f42546e0aa2c940602ce0776e03a3a13acc30b8bbfe3d3e9639c1",
-    "extracted_at": "2026-03-21T01:25:36.063Z",
+    "content_hash": "29a6cad08daaa0365a42e381ac467bde1873899a2c876b46d3816198b575d2e9",
+    "extracted_at": "2026-03-24T18:10:26.969Z",
     "extraction": {
       "bonus_available": {
         "value": true,
-        "confidence": 0.95
+        "confidence": 0.99
       },
       "match_percentage": {
         "value": 100,
-        "confidence": 0.85
+        "confidence": 0.95
       },
       "max_bonus_eur": {
         "value": 100,
-        "confidence": 0.9
+        "confidence": 0.95
       },
       "wagering_requirement": {
         "value": null,
@@ -577,11 +623,11 @@
       },
       "bonus_type": {
         "value": "combined",
-        "confidence": 0.8
+        "confidence": 0.85
       },
       "free_spins": {
         "value": 100,
-        "confidence": 0.85
+        "confidence": 0.9
       },
       "min_deposit_eur": {
         "value": null,
@@ -598,12 +644,12 @@
     }
   },
   "toto": {
-    "content_hash": "b7388b322a17c89a153997ac2fc7faf96730d856d71e2cea75472ea34711b859",
-    "extracted_at": "2026-03-21T01:25:47.931Z",
+    "content_hash": "bb5cf6c4029a352bbac30a4ddd9417f31ad001b562621553298034bd785e9f58",
+    "extracted_at": "2026-03-24T21:47:15.346Z",
     "extraction": {
       "bonus_available": {
         "value": true,
-        "confidence": 0.7
+        "confidence": 0.6
       },
       "match_percentage": {
         "value": null,
@@ -644,12 +690,12 @@
     }
   },
   "jacks-nl": {
-    "content_hash": "22b77f474b7d023da9db1aed6ba2b74356f6e242722a75ddeaf649505b719e00",
-    "extracted_at": "2026-03-21T01:26:00.664Z",
+    "content_hash": "5c78bbcad7b3e4c3e5f5f25a4c7e780dec3d315d375699b5e12f9d0cc025f493",
+    "extracted_at": "2026-03-24T18:10:51.631Z",
     "extraction": {
       "bonus_available": {
         "value": true,
-        "confidence": 0.99
+        "confidence": 0.95
       },
       "match_percentage": {
         "value": 100,
@@ -690,8 +736,8 @@
     }
   },
   "getlucky": {
-    "content_hash": "126cad5c4a14e33e41e8a74baec89615771a9c145cd2fd7a5ca2d395373c3539",
-    "extracted_at": "2026-03-21T01:26:39.923Z",
+    "content_hash": "f97f24d8a61d8558cdf238eba7b0fb1a46d0a153693d8ee96b1490adf4711330",
+    "extracted_at": "2026-03-24T18:11:25.566Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -736,8 +782,8 @@
     }
   },
   "bingoal": {
-    "content_hash": "2a5c375198072aa9534841a09c87ee4366983b50f7bef972e24926ab502c930f",
-    "extracted_at": "2026-03-21T01:27:04.888Z",
+    "content_hash": "94ffed3021f5d7af458899b3e229522dbf535d5509400b2fd91dc5ffd06331cf",
+    "extracted_at": "2026-03-24T21:48:18.331Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -761,7 +807,7 @@
       },
       "bonus_type": {
         "value": "deposit_match",
-        "confidence": 0.9
+        "confidence": 0.95
       },
       "free_spins": {
         "value": null,
@@ -782,8 +828,100 @@
     }
   },
   "hommerson": {
-    "content_hash": "52b367bef40db3f6229c4245e5dc46a42479f0d89e9e1a3c3df8c3589a331bb9",
-    "extracted_at": "2026-03-21T01:27:17.316Z",
+    "content_hash": "2ae680e25d9cead56979a946085597adbeed7810a7142372b2a0ef5cfec86bc1",
+    "extracted_at": "2026-03-24T21:48:35.702Z",
+    "extraction": {
+      "bonus_available": {
+        "value": true,
+        "confidence": 0.2
+      },
+      "match_percentage": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_bonus_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_requirement": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_applies_to": {
+        "value": null,
+        "confidence": 0
+      },
+      "bonus_type": {
+        "value": null,
+        "confidence": 0
+      },
+      "free_spins": {
+        "value": null,
+        "confidence": 0
+      },
+      "min_deposit_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "time_limit_days": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_cashout_eur": {
+        "value": null,
+        "confidence": 0
+      }
+    }
+  },
+  "lucky-7-casino": {
+    "content_hash": "f6d6b98196d2d5cd7b7c331f70177be7ef63c84bb582ab0a1bf9b4c3d5e097a7",
+    "extracted_at": "2026-03-24T21:48:46.654Z",
+    "extraction": {
+      "bonus_available": {
+        "value": true,
+        "confidence": 0.2
+      },
+      "match_percentage": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_bonus_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_requirement": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_applies_to": {
+        "value": null,
+        "confidence": 0
+      },
+      "bonus_type": {
+        "value": null,
+        "confidence": 0
+      },
+      "free_spins": {
+        "value": null,
+        "confidence": 0
+      },
+      "min_deposit_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "time_limit_days": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_cashout_eur": {
+        "value": null,
+        "confidence": 0
+      }
+    }
+  },
+  "bet365": {
+    "content_hash": "f31adb14ae836fe80bd90b98879a0049bde70281e9d5ba99c0022a5330ee44fd",
+    "extracted_at": "2026-03-24T21:44:02.766Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -827,9 +965,9 @@
       }
     }
   },
-  "lucky-7-casino": {
-    "content_hash": "4e3870f291717b26cd4053e98edb16990910d00f68ec7463dfc5f526da015bc1",
-    "extracted_at": "2026-03-21T01:27:29.400Z",
+  "goldrun-casino": {
+    "content_hash": "142d3a545d6229ca27e42bcc87f668b7792172577eee0d8a99303d0772206ec7",
+    "extracted_at": "2026-03-24T21:44:23.078Z",
     "extraction": {
       "bonus_available": {
         "value": true,
@@ -866,6 +1004,190 @@
       "time_limit_days": {
         "value": null,
         "confidence": 0
+      },
+      "max_cashout_eur": {
+        "value": null,
+        "confidence": 0
+      }
+    }
+  },
+  "starcasino": {
+    "content_hash": "a706fd9acd9591c08c64eb052157ccd9cec6ca74dbc3c28d7bccac5c09879372",
+    "extracted_at": "2026-03-24T18:07:20.889Z",
+    "extraction": {
+      "bonus_available": {
+        "value": true,
+        "confidence": 0.95
+      },
+      "match_percentage": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_bonus_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_requirement": {
+        "value": 30,
+        "confidence": 0.95
+      },
+      "wagering_applies_to": {
+        "value": "bonus",
+        "confidence": 0.85
+      },
+      "bonus_type": {
+        "value": "deposit_match",
+        "confidence": 0.8
+      },
+      "free_spins": {
+        "value": null,
+        "confidence": 0
+      },
+      "min_deposit_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "time_limit_days": {
+        "value": 60,
+        "confidence": 0.95
+      },
+      "max_cashout_eur": {
+        "value": null,
+        "confidence": 0
+      }
+    }
+  },
+  "circus": {
+    "content_hash": "a1b3076ac83d7d1348d2cb0cf8d272371259cf1049a950a663c45a5eb2b6ce58",
+    "extracted_at": "2026-03-24T21:45:31.551Z",
+    "extraction": {
+      "bonus_available": {
+        "value": true,
+        "confidence": 0.95
+      },
+      "match_percentage": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_bonus_eur": {
+        "value": 250,
+        "confidence": 0.85
+      },
+      "wagering_requirement": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_applies_to": {
+        "value": null,
+        "confidence": 0
+      },
+      "bonus_type": {
+        "value": "combined",
+        "confidence": 0.7
+      },
+      "free_spins": {
+        "value": 100,
+        "confidence": 0.85
+      },
+      "min_deposit_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "time_limit_days": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_cashout_eur": {
+        "value": null,
+        "confidence": 0
+      }
+    }
+  },
+  "one-casino": {
+    "content_hash": "ee4e4ff52962836260807c6dfd405e8d54ece1490a39169a7ad96762486418e4",
+    "extracted_at": "2026-03-24T21:47:43.987Z",
+    "extraction": {
+      "bonus_available": {
+        "value": true,
+        "confidence": 0.99
+      },
+      "match_percentage": {
+        "value": 50,
+        "confidence": 0.97
+      },
+      "max_bonus_eur": {
+        "value": 100,
+        "confidence": 0.95
+      },
+      "wagering_requirement": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_applies_to": {
+        "value": null,
+        "confidence": 0
+      },
+      "bonus_type": {
+        "value": "combined",
+        "confidence": 0.9
+      },
+      "free_spins": {
+        "value": null,
+        "confidence": 0
+      },
+      "min_deposit_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "time_limit_days": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_cashout_eur": {
+        "value": null,
+        "confidence": 0
+      }
+    }
+  },
+  "winz": {
+    "content_hash": "8e3b7cbb0c3eeea7b9156c5e33bd9c0833a6f453e9aed4321a3d8cdcd5698257",
+    "extracted_at": "2026-03-24T18:11:45.061Z",
+    "extraction": {
+      "bonus_available": {
+        "value": true,
+        "confidence": 0.7
+      },
+      "match_percentage": {
+        "value": null,
+        "confidence": 0
+      },
+      "max_bonus_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "wagering_requirement": {
+        "value": 30,
+        "confidence": 0.8
+      },
+      "wagering_applies_to": {
+        "value": "bonus",
+        "confidence": 0.9
+      },
+      "bonus_type": {
+        "value": null,
+        "confidence": 0
+      },
+      "free_spins": {
+        "value": null,
+        "confidence": 0
+      },
+      "min_deposit_eur": {
+        "value": null,
+        "confidence": 0
+      },
+      "time_limit_days": {
+        "value": 30,
+        "confidence": 0.9
       },
       "max_cashout_eur": {
         "value": null,
