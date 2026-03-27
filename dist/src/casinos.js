@@ -36,17 +36,17 @@ export const casinos = [
                 table_games: 0,
                 video_poker: 0
             },
-            excluded_slots: [
-                "Alleen geselecteerde slots per week: Mega Fire Blaze: Piggies & the Bank, Holland Casino Cash Collect, Starlite Fruits, Leprechaun’s Luck: Cash Collect, Oink Oink Oink, Gummy Giga Match, Gladiator: Mega Cash Collect, Fire Blaze: Blue Wizard"
-            ],
-            min_odds: null
+            excluded_slots: [],
+            free_spins_rtp: 0.950,
+            min_odds: null,
+            notes: "300 spins (€0,10 p.st.) over 4 weken op 8 Playtech-slots: Mega Fire Blaze, HC Cash Collect, Starlite Fruits, Leprechaun’s Luck, Oink Oink Oink, Gummy Giga Match, Gladiator Mega Cash Collect, Fire Blaze Blue Wizard. 2 stortingen van €10 (week 1+3), weken 2+4 alleen inloggen + €10 inzetten. RTP ~95,0% (geschat, Playtech-gemiddelde). Winsten = cash."
         },
         default_slot_rtp: 0.965,
         withdrawal_time_hours: 24,
         terms_url: "https://www.hollandcasino.nl/promoties/casino/welcome-offer",
         logo_component: "HcLogo",
         rating_math: 0,
-        last_verified: "2026-03-24"
+        last_verified: "2026-03-27"
     },
     {
         id: "unibet",
