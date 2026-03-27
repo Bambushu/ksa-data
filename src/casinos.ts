@@ -773,17 +773,18 @@ export const casinos: Casino[] = [
     bonus_variants: [
       {
       id: "comeon-1st",
-      name: "1e storting: 200 spins Big Bass Splash",
+      name: "1e storting: 100 spins Big Bass Splash",
       type: "free_spins",
       min_deposit_eur: 20,
-      free_spins: 200,
+      free_spins: 100,
       free_spins_value_eur: 0.2,
-      max_bonus_eur: 40,
+      free_spins_rtp: 0.946,
+      max_bonus_eur: 20,
       wagering_requirement: 1,
       wagering_applies_to: "bonus",
       fixed_wagering_eur: 20,
       time_limit_days: 30,
-      notes: "1× storting op slots."
+      notes: "1× storting op slots. Big Bass Splash RTP: 94,6%."
     },
       {
       id: "comeon-2nd",
@@ -792,10 +793,11 @@ export const casinos: Casino[] = [
       min_deposit_eur: 20,
       free_spins: 50,
       free_spins_value_eur: 0.2,
+      free_spins_rtp: 0.940,
       wagering_requirement: 1,
       wagering_applies_to: "bonus",
       fixed_wagering_eur: 20,
-      notes: "1× storting op slots."
+      notes: "1× storting op slots. Gates of Olympus 1000 RTP: 94,0%."
     },
       {
       id: "comeon-3rd",
@@ -804,20 +806,21 @@ export const casinos: Casino[] = [
       min_deposit_eur: 20,
       free_spins: 50,
       free_spins_value_eur: 0.2,
+      free_spins_rtp: 0.945,
       wagering_requirement: 1,
       wagering_applies_to: "bonus",
       fixed_wagering_eur: 20,
-      notes: "1× storting op slots."
+      notes: "1× storting op slots. Sugar Rush RTP: 94,5%."
     }
     ],
     welcome_bonus: {
     type: "free_spins",
     match_percentage: 0,
     max_bonus_eur: 0,
-    free_spins: 100,
+    free_spins: 200,
     free_spins_value_eur: 0.2,
     wagering_requirement: 1,
-    wagering_applies_to: "bonus_plus_deposit",
+    wagering_applies_to: "bonus",
     min_deposit_eur: 20,
     max_cashout_eur: null,
     time_limit_days: 30,
@@ -828,9 +831,9 @@ export const casinos: Casino[] = [
     video_poker: 0
   },
     excluded_slots: [],
-    free_spins_rtp: 0.965,
+    free_spins_rtp: 0.9442,
     min_odds: null,
-    notes: "Welkomstbonus in 3 delen: 1e storting 100 spins (Big Bass Splash), 2e 50 (Gates of Olympus 1000), 3e 50 (Sugar Rush). Totaal 200 spins. Inzetvereiste: 1× storting op slots. Spins €0,20 p.st. 24+."
+    notes: "Welkomstbonus in 3 delen: 1e storting 100 spins (Big Bass Splash, RTP 94,6%), 2e 50 spins (Gates of Olympus 1000, RTP 94,0%), 3e 50 spins (Sugar Rush, RTP 94,5%). Totaal 200 spins over 3 stortingen van €20. Inzetvereiste: 1× storting op slots. Spins €0,20 p.st. 24+."
   },
     default_slot_rtp: 0.965,
     withdrawal_time_hours: 24,
