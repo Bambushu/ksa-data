@@ -488,15 +488,16 @@ export const casinos: Casino[] = [
     excluded_slots: [
       "Free spins alleen op: Gates of Olympus 1000, Sweet Bonanza, Buffalo King Megaways, Big Bass Bonanza 1000, Starlight Princess Super Scatter"
     ],
-    free_spins_rtp: 0.965,
-    min_odds: null
+    free_spins_rtp: 0.9490,
+    min_odds: null,
+    notes: "250 spins over 5 slots (50 elk): Gates of Olympus 1000 (94,50%), Sweet Bonanza (95,43%), Buffalo King Megaways (~95,46%), Big Bass Bonanza 1000 (~94,60%), Starlight Princess Super Scatter (~94,50%). Gewogen RTP: 94,90%. Geen inzetvereiste op winsten."
   },
     default_slot_rtp: 0.965,
     withdrawal_time_hours: 24,
     terms_url: "https://www.vbet.nl/nl/promotions/all",
     logo_component: "VbetLogo",
     rating_math: 0,
-    last_verified: "2026-03-24"
+    last_verified: "2026-03-27"
   },
   {
     id: "circus",
