@@ -951,7 +951,7 @@ export const casinos = [
                 name: "Brons",
                 type: "free_spins",
                 min_deposit_eur: 25,
-                free_spins: 2600,
+                free_spins: 100,
                 free_spins_value_eur: 0.1,
                 free_spins_rtp: 0.9644,
                 free_spins_wagering_requirement: 0,
@@ -959,7 +959,7 @@ export const casinos = [
                 fixed_wagering_eur: 375,
                 wagering_requirement: 15,
                 wagering_applies_to: "bonus",
-                notes: "15x minimale pakketstorting (€25). Spins op Henry the Ape."
+                notes: "15x minimale pakketstorting (€25). 100 spins op Henry the Ape / Starburst (€0,10 p.st.)."
             },
             {
                 id: "leovegas-zilver",
