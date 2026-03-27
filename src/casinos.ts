@@ -253,10 +253,11 @@ export const casinos: Casino[] = [
       min_deposit_eur: 10,
       free_spins: 250,
       free_spins_value_eur: 0.1,
+      free_spins_rtp: 0.946,
       wagering_requirement: 0,
       wagering_applies_to: "bonus",
       qualifying_wager_eur: 10,
-      notes: "Welkomstbonus voor nieuwe spelers 24+. Geen WR op spinwinsten. Golden Free Spins (65 p/m, 12 maanden) is aparte promo voor bestaande spelers en hoort niet bij de welkomstbonus."
+      notes: "Big Bass Splash (Pragmatic Play), RTP 94,60%. 100 spins direct + 50/dag over 3 dagen. Geen WR op spinwinsten. 24+."
     }
     ],
     welcome_bonus: {
@@ -281,15 +282,16 @@ export const casinos: Casino[] = [
       "Free spins alleen op Big Bass Splash",
       "Golden Free Spins promotie valt buiten welkomstbonus"
     ],
-    free_spins_rtp: 0.9671,
-    min_odds: null
+    free_spins_rtp: 0.946,
+    min_odds: null,
+    notes: "250 spins op Big Bass Splash (RTP 94,60%). Storting €10, geen inzetvereiste op winsten. 100 spins direct, 50/dag over 3 dagen."
   },
     default_slot_rtp: 0.964,
     withdrawal_time_hours: 36,
     terms_url: "https://www.betmgm.nl/promoties/voorwaarden",
     logo_component: "BetMgmLogo",
     rating_math: 0,
-    last_verified: "2026-03-24"
+    last_verified: "2026-03-27"
   },
   {
     id: "tonybet",
@@ -606,10 +608,11 @@ export const casinos: Casino[] = [
       min_deposit_eur: 20,
       free_spins: 100,
       free_spins_value_eur: 0.2,
+      free_spins_rtp: 0.9543,
       wagering_requirement: 1,
       wagering_applies_to: "bonus",
       qualifying_wager_eur: 20,
-      notes: "Free spins 30 dagen geldig na claim."
+      notes: "Sweet Bonanza (Pragmatic Play), RTP 95,43%. 30 dagen geldig na claim."
     },
       {
       id: "888-casino-2nd-deposit",
@@ -618,10 +621,11 @@ export const casinos: Casino[] = [
       min_deposit_eur: 20,
       free_spins: 50,
       free_spins_value_eur: 0.2,
+      free_spins_rtp: 0.9451,
       wagering_requirement: 1,
       wagering_applies_to: "bonus",
       qualifying_wager_eur: 20,
-      notes: "Free spins 30 dagen geldig na claim."
+      notes: "Gates of Olympus (Pragmatic Play), RTP 94,51%. 30 dagen geldig na claim."
     },
       {
       id: "888-casino-3rd-deposit",
@@ -630,10 +634,11 @@ export const casinos: Casino[] = [
       min_deposit_eur: 20,
       free_spins: 50,
       free_spins_value_eur: 0.2,
+      free_spins_rtp: 0.9425,
       wagering_requirement: 1,
       wagering_applies_to: "bonus",
       qualifying_wager_eur: 20,
-      notes: "Free spins 30 dagen geldig na claim."
+      notes: "Book of Dead (Play'n GO), RTP 94,25%. 30 dagen geldig na claim."
     }
     ],
     ksa_license: "2135/01.272.551",
@@ -660,9 +665,10 @@ export const casinos: Casino[] = [
       "Storting 2: Gates of Olympus (50 FS)",
       "Storting 3: Book of Dead (50 FS)"
     ],
-    free_spins_rtp: 0.9649,
+    free_spins_rtp: 0.9491,
     min_odds: null,
-    max_bet_per_spin_eur: 3
+    max_bet_per_spin_eur: 3,
+    notes: "200 spins over 3 stortingen van €20: 100 FS Sweet Bonanza (95,43%), 50 FS Gates of Olympus (94,51%), 50 FS Book of Dead (94,25%). Gewogen RTP: 94,91%."
   },
     default_slot_rtp: 0.965,
     withdrawal_time_hours: 24,
@@ -1208,8 +1214,6 @@ export const casinos: Casino[] = [
     name: "TOTO",
     slug: "toto",
     bonus_category: "mixed",
-    package_type: "multi_deposit",
-    multi_deposit_amounts: [20, 20, 20],
     live_casino_bonus: {
     type: "free_chips",
     summary: "€50 Gratis Chips voor TOTO Lightning Roulette. Stort €20, speel €20 in casino.",
@@ -1246,23 +1250,24 @@ export const casinos: Casino[] = [
     min_deposit_eur: 20,
     qualifying_wager_eur: 20,
     max_cashout_eur: null,
-    time_limit_days: 30,
+    time_limit_days: 7,
     game_weightings: {
     slots: 1,
     live_casino: 0,
     table_games: 0,
     video_poker: 0
   },
-    excluded_slots: ["Pirots 4"],
+    excluded_slots: [],
     free_spins_rtp: 0.965,
-    min_odds: null
+    min_odds: null,
+    notes: "200 spins op Pirots 4. Stort €20, speel €20 in casino. Spins 7 dagen geldig. Claim via Mijn Bonus pagina. Winsten = cash. 24+."
   },
     default_slot_rtp: 0.965,
     withdrawal_time_hours: 24,
     terms_url: "https://www.toto.nl/welkomstbonus/casino",
     logo_component: "TotoLogo",
     rating_math: 0,
-    last_verified: "2026-03-24"
+    last_verified: "2026-03-27"
   },
   {
     id: "winnitt",
@@ -1335,7 +1340,32 @@ export const casinos: Casino[] = [
     name: "Jacks.nl",
     slug: "jacks-nl",
     ksa_license: "1959/01.251.762",
-    package_type: "additive",
+    package_type: "choice",
+    bonus_variants: [
+      {
+      id: "jacks-match",
+      name: "100% match tot €250",
+      type: "deposit_match",
+      match_percentage: 100,
+      max_bonus_eur: 250,
+      min_deposit_eur: 10,
+      wagering_requirement: 30,
+      wagering_applies_to: "bonus",
+      notes: "100% stortingsbonus tot €250. 30× rondspeeleis over bonusgeld."
+    },
+      {
+      id: "jacks-spins",
+      name: "50 free spins (€1,00 p.st.)",
+      type: "free_spins",
+      free_spins: 50,
+      free_spins_value_eur: 1.0,
+      min_deposit_eur: 10,
+      qualifying_wager_eur: 25,
+      wagering_requirement: 0,
+      wagering_applies_to: "bonus",
+      notes: "50 spins op Coin Strike 2 / Super Pink Joker / More Energy Coins (Playson). €1 per spin. Speel €25 op slots om te ontgrendelen. Winsten = cash. 7 dagen geldig."
+    }
+    ],
     sports_bonus: {
     type: "free_bet",
     summary: "Krijg €100 aan freebets. 100% Free Bet tot €100 na eerste inzet van min. €10 op odds 1.50.",
@@ -1348,31 +1378,33 @@ export const casinos: Casino[] = [
     last_verified: "2026-03-24"
   },
     welcome_bonus: {
-    type: "combined",
-    match_percentage: 100,
-    max_bonus_eur: 250,
+    type: "free_spins",
+    match_percentage: 0,
+    max_bonus_eur: 0,
     free_spins: 50,
-    free_spins_value_eur: 0.2,
-    wagering_requirement: 30,
+    free_spins_value_eur: 1.0,
+    wagering_requirement: 0,
     wagering_applies_to: "bonus",
     min_deposit_eur: 10,
+    qualifying_wager_eur: 25,
     max_cashout_eur: null,
     time_limit_days: 30,
     game_weightings: {
     slots: 1,
-    live_casino: 0.1,
-    table_games: 0.1,
+    live_casino: 0,
+    table_games: 0,
     video_poker: 0
   },
     excluded_slots: [],
-    min_odds: null
+    min_odds: null,
+    notes: "Keuzebonus: 100% match tot €250 (30× WR) OF 50 free spins à €1,00 (totale waarde €50). Spins op Playson-slots. Speel €25 om spins te ontgrendelen. Winsten = cash."
   },
     default_slot_rtp: 0.965,
     withdrawal_time_hours: 24,
     terms_url: "https://www.jacks.nl/promoties",
     logo_component: "JacksLogo",
     rating_math: 0,
-    last_verified: "2026-03-24"
+    last_verified: "2026-03-27"
   },
   {
     id: "one-casino",
@@ -1484,6 +1516,7 @@ export const casinos: Casino[] = [
       min_deposit_eur: 20,
       free_spins: 100,
       free_spins_value_eur: 0.2,
+      free_spins_rtp: 0.9543,
       fixed_wagering_eur: 20,
       wagering_requirement: 1,
       wagering_applies_to: "bonus"
@@ -1495,6 +1528,7 @@ export const casinos: Casino[] = [
       min_deposit_eur: 20,
       free_spins: 50,
       free_spins_value_eur: 0.2,
+      free_spins_rtp: 0.9450,
       fixed_wagering_eur: 20,
       wagering_requirement: 1,
       wagering_applies_to: "bonus"
@@ -1506,6 +1540,7 @@ export const casinos: Casino[] = [
       min_deposit_eur: 20,
       free_spins: 50,
       free_spins_value_eur: 0.2,
+      free_spins_rtp: 0.9450,
       fixed_wagering_eur: 20,
       wagering_requirement: 1,
       wagering_applies_to: "bonus"
@@ -1534,15 +1569,16 @@ export const casinos: Casino[] = [
       "Sugar Rush",
       "Starlight Princess 1000"
     ],
-    free_spins_rtp: 0.965,
-    min_odds: null
+    free_spins_rtp: 0.9497,
+    min_odds: null,
+    notes: "200 spins over 3 stortingen van €20: 100 FS Sweet Bonanza (95,43%), 50 FS Sugar Rush (94,50%), 50 FS Starlight Princess 1000 (94,50%). Gewogen RTP: 94,97%."
   },
     default_slot_rtp: 0.965,
     withdrawal_time_hours: 24,
     terms_url: "https://www.getlucky.nl/promoties/casino-welkomstbonus",
     logo_component: "GetLuckyLogo",
     rating_math: 0,
-    last_verified: "2026-03-24"
+    last_verified: "2026-03-27"
   },
   {
     id: "winz",
