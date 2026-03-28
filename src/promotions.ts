@@ -11,7 +11,7 @@ export const promotions: Promotion[] = [
     "bonus_value": 5,
     "starts": "2026-03-23",
     "expires": "2026-03-29",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "711-15-000-greentube-toernooi",
@@ -22,7 +22,7 @@ export const promotions: Promotion[] = [
     "bonus_value": 15000,
     "starts": "2026-03-26",
     "expires": "2026-03-30",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "711-10-000-multiplier-drops",
@@ -32,7 +32,7 @@ export const promotions: Promotion[] = [
     "description": "Win 10x tot 1000x je inzet met de Multiplier Drops actie.",
     "starts": "2026-03-03",
     "expires": "2026-03-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "711-20-stortingsbonus",
@@ -43,7 +43,7 @@ export const promotions: Promotion[] = [
     "bonus_value": 20,
     "starts": "2026-03-01",
     "expires": "2026-03-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "betcity-win-250",
@@ -232,7 +232,7 @@ export const promotions: Promotion[] = [
     "bonus_value": 1000,
     "starts": "2026-03-23",
     "expires": "2026-03-29",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "betnation-gates-of-olympus-super-scatter-gratis-spins",
@@ -240,9 +240,9 @@ export const promotions: Promotion[] = [
     "title": "Gates Of Olympus Super Scatter Gratis Spins",
     "type": "free_spins",
     "description": "Stort vanaf €50 en ontvang tot 50 gratis spins bij Gates Of Olympus Super Scatter.",
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "betnation-dagelijkse-mystery-spins",
@@ -252,7 +252,7 @@ export const promotions: Promotion[] = [
     "description": "Voltooi de dagelijkse Mystery Spins bij Betnation en ontvang tussen de 5 en 100 gratis spins. Hoeveel je krijgt blijft een verrassing!",
     "starts": "2026-03-27",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "betnation-nieuwsbrief-gratis-spins",
@@ -260,9 +260,9 @@ export const promotions: Promotion[] = [
     "title": "Nieuwsbrief Gratis Spins",
     "type": "free_spins",
     "description": "Schrijf je in voor de nieuwsbrief en ontvang maandelijks tot wel 50 gratis spins voor de leukste spellen.",
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "betnation-drops-wins-pragmatic-play",
@@ -270,9 +270,9 @@ export const promotions: Promotion[] = [
     "title": "Drops & Wins Pragmatic Play",
     "type": "tournament",
     "description": "Doe mee met de Drops & Wins bij geselecteerde Pragmatic Play-spellen en maak kans op dagelijkse prize drops.",
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "betnation-voetbal-free-bet-interland-break",
@@ -283,7 +283,7 @@ export const promotions: Promotion[] = [
     "bonus_value": 5,
     "starts": "2026-03-27",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "betnation-25-bet-builder-profit-boosts",
@@ -292,9 +292,9 @@ export const promotions: Promotion[] = [
     "type": "other",
     "description": "Pak tot maar liefst €1.000 extra met 25% Bet Builder Profit Boosts op jouw favoriete wedstrijden.",
     "bonus_value": 1000,
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "casino777-aanbieder-van-de-maand-pragmatic-play",
@@ -716,9 +716,9 @@ export const promotions: Promotion[] = [
     "type": "tournament",
     "description": "Neem deel aan alle 4 de bonusspellen van Crazy Time en win een mooie geldprijs uit een prijzenpot van €10.000.",
     "bonus_value": 10000,
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "toto-lucky-number-7-bij-toto-lightning-roulette",
@@ -727,9 +727,9 @@ export const promotions: Promotion[] = [
     "type": "tournament",
     "description": "Speel TOTO Lightning Roulette en maak kans op een deel van €10.000.",
     "bonus_value": 10000,
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "toto-verdien-gratis-chips-voor-toto-lightning-roulette",
@@ -738,9 +738,9 @@ export const promotions: Promotion[] = [
     "type": "other",
     "description": "Speel TOTO Lightning Roulette en verdien €5 Gratis Chips.",
     "bonus_value": 5,
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "toto-game-show-specials",
@@ -751,7 +751,7 @@ export const promotions: Promotion[] = [
     "bonus_value": 10000,
     "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "toto-toto-lucky-777",
@@ -760,9 +760,9 @@ export const promotions: Promotion[] = [
     "type": "free_spins",
     "description": "Maak kans op €100 Gratis Chips aan de Live TOTO Blackjack tafels.",
     "bonus_value": 100,
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "toto-koning-toto-bij-blackjack",
@@ -771,9 +771,9 @@ export const promotions: Promotion[] = [
     "type": "cashback",
     "description": "Maak kans op €100 extra cash aan de Live Blackjack tafels.",
     "bonus_value": 100,
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "toto-drops-wins-van-pragmatic-play",
@@ -781,9 +781,9 @@ export const promotions: Promotion[] = [
     "title": "Drops & Wins van Pragmatic Play!",
     "type": "tournament",
     "description": "Maak elke dag kans op extra prijzen op Pragmatic Play slotmachines.",
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "toto-toto-toernooien-kans-op-cash-of-gratis-spins",
@@ -793,7 +793,7 @@ export const promotions: Promotion[] = [
     "description": "Maak elke week en elk weekend kans op cash of Gratis Spins met een toernooi in het TOTO Casino.",
     "starts": "2026-03-23",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "toto-toto-maandag",
@@ -803,7 +803,7 @@ export const promotions: Promotion[] = [
     "description": "Ontvang 5 Gratis Spins en maak kans op Cash of Extra Spins elke maandag.",
     "starts": "2026-03-30",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "toto-toto-exclusief",
@@ -811,9 +811,9 @@ export const promotions: Promotion[] = [
     "title": "TOTO Exclusief",
     "type": "free_spins",
     "description": "Verdien Gratis Spins met een spel dat je exclusief bij TOTO speelt.",
-    "starts": "2026-03-27",
+    "starts": "2026-03-28",
     "expires": "2099-12-31",
-    "last_verified": "2026-03-27"
+    "last_verified": "2026-03-28"
   },
   {
     "id": "unibet-50-000-pot-o-prizes",
